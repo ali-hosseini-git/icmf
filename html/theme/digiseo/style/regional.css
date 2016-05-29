@@ -5,9 +5,9 @@
 	font-family: 'BRoya';
 	src: url('../fonts/WebRoya.eot');
 	src: url('../fonts/WebRoya.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/WebRoya.woff') format('woff'),
-		 url('../fonts/WebRoya.ttf') format('truetype'),
-		 url('../fonts/WebRoya.svg#WebRoya') format('svg');
+		url('../fonts/WebRoya.woff') format('woff'),
+		url('../fonts/WebRoya.ttf') format('truetype'),
+		url('../fonts/WebRoya.svg#WebRoya') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -16,9 +16,9 @@
 	font-family: 'Yekan';
 	src: url('../fonts/Yekan.eot');
 	src: url('../fonts/Yekan.eot?iefix') format('eot'),
-		 url('../fonts/Yekan.woff') format('woff'), 
-		 url('../fonts/Yekan.ttf') format('truetype'), 
-		 url('../fonts/Yekan.svg#webfontZam02nTh') format('svg');
+		url('../fonts/Yekan.woff') format('woff'), url('../fonts/Yekan.ttf')
+		format('truetype'), url('../fonts/Yekan.svg#webfontZam02nTh')
+		format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -27,19 +27,23 @@
 	font-family: 'Koodak';
 	src: url('../fonts/BKoodakBold.eot');
 	src: url('../fonts/BKoodakBold.eot?iefix') format('eot'),
-		 url('../fonts/BKoodakBold.woff') format('woff'),
-		 url('../fonts/BKoodakBold.ttf') format('truetype'); 
+		url('../fonts/BKoodakBold.woff') format('woff'),
+		url('../fonts/BKoodakBold.ttf') format('truetype');
 	font-style: normal;
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: 'et-line';
-	src:url('../../../kernel/lib/xorg/fonts/etLine/et-line.eot');
-	src:url('../../../kernel/lib/xorg/fonts/etLine/et-line.eot?#iefix') format('embedded-opentype'),
-		url('../../../kernel/lib/xorg/fonts/etLine/et-line.woff') format('woff'),
-		url('../../../kernel/lib/xorg/fonts/etLine/et-line.ttf') format('truetype'),
-		url('../../../kernel/lib/xorg/fonts/etLine/et-line.svg#et-line') format('svg');
+	src: url('../../../kernel/lib/xorg/fonts/etLine/et-line.eot');
+	src: url('../../../kernel/lib/xorg/fonts/etLine/et-line.eot?#iefix')
+		format('embedded-opentype'),
+		url('../../../kernel/lib/xorg/fonts/etLine/et-line.woff')
+		format('woff'),
+		url('../../../kernel/lib/xorg/fonts/etLine/et-line.ttf')
+		format('truetype'),
+		url('../../../kernel/lib/xorg/fonts/etLine/et-line.svg#et-line')
+		format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -103,10 +107,14 @@ p {
 
 hr.soften {
 	height: 1px;
-	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8), rgba(0, 0, 0, 0));
-	background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8), rgba(0, 0, 0, 0));
-	background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8), rgba(0, 0, 0, 0));
-	background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8), rgba(0, 0, 0, 0));
+	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, .8), rgba(0, 0, 0, 0));
+	background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, .8), rgba(0, 0, 0, 0));
+	background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, .8), rgba(0, 0, 0, 0));
+	background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0),
+		rgba(0, 0, 0, .8), rgba(0, 0, 0, 0));
 	border: 0;
 }
 
@@ -117,28 +125,28 @@ hr.soften {
 /**********************************************************
 * Preloader
 **********************************************************/
-#preloader  {
-     position: absolute;
-     top: 0;
-     left: 0;
-     right: 0;
-     bottom: 0;
-     background-color: #fefefe;
-     z-index: 99;
-    height: 100%;
- }
+#preloader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fefefe;
+	z-index: 99;
+	height: 100%;
+}
 
-#status  {
-     width: 200px;
-     height: 200px;
-     position: absolute;
-     left: 50%;
-     top: 50%;
-     background-image: url('../img/loader.gif');
-     background-repeat: no-repeat;
-     background-position: center;
-     margin: -100px 0 0 -100px;
- }
+#status {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background-image: url('../img/loader.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: -100px 0 0 -100px;
+}
 
 /**********************************************************
 * Navigation
@@ -147,7 +155,7 @@ hr.soften {
 	margin: 0px;
 	opacity: 0.9;
 	background-color: transparent;
-    border-color: transparent;
+	border-color: transparent;
 }
 
 .nav.navbar-nav li a, .nav.navbar-nav li a b, .navbar-brand {
@@ -194,34 +202,35 @@ hr.soften {
 
 .overItem {
 	position: absolute;
-	top: 70px;
+	top: 110px;
 	left: 0;
 	right: 0;
 	margin: auto;
 	width: 98%;
-	height: 600px;
+	height: 500px;
 	background: rgba(255, 255, 255, 0.5);
 	border-radius: 5px;
 	z-index: 10;
 }
 
 .someAudit {
-	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%,
-		rgba(0, 0, 0, 0.51) 31%, rgba(237, 11, 110, 0.38) 73%,
-		rgba(237, 11, 110, 0.3) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%,
-		rgba(0, 0, 0, 0.51) 31%, rgba(237, 11, 110, 0.38) 73%,
-		rgba(237, 11, 110, 0.3) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%,
-		rgba(0, 0, 0, 0.51) 31%, rgba(237, 11, 110, 0.38) 73%,
-		rgba(237, 11, 110, 0.3) 100%);
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f95f0c+11,222222+95&0.67+0,0.58+100 */
+	background: -moz-linear-gradient(top, rgba(249, 95, 12, 0.67) 0%,
+		rgba(249, 95, 12, 0.66) 11%, rgba(34, 34, 34, 0.58) 95%,
+		rgba(34, 34, 34, 0.58) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(249, 95, 12, 0.67) 0%,
+		rgba(249, 95, 12, 0.66) 11%, rgba(34, 34, 34, 0.58) 95%,
+		rgba(34, 34, 34, 0.58) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(249, 95, 12, 0.67) 0%,
+		rgba(249, 95, 12, 0.66) 11%, rgba(34, 34, 34, 0.58) 95%,
+		rgba(34, 34, 34, 0.58) 100%);
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000',
-		endColorstr='#4ded0b6e', GradientType=0); /* IE6-9 */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abf95f0c',
+		endColorstr='#94222222', GradientType=0); /* IE6-9 */
 	margin-top: 40px;
 	border-radius: 5px;
 	padding: 5px;
-	height: 520px;
+	height: 420px;
 }
 
 /**********************************************************
@@ -319,13 +328,13 @@ section.services {
 
 .serviceBox span {
 	font-size: 5vw;
-	color: #E91D63;
+	color: #F95F0C;
 	transition: all .5s ease-in-out;
 	-moz-transition: all .5s ease-in-out;
 	-webkit-transition: all .5s ease-in-out;
 }
 
-.serviceBox:hover > span {
+.serviceBox:hover>span {
 	-moz-transform: scaleX(-1);
 	-o-transform: scaleX(-1);
 	-webkit-transform: scaleX(-1);
@@ -345,10 +354,10 @@ section.services {
 	color: #b2b0b0;
 	border-radius: 3px;
 	font-family: Yekan;
-	
 	transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
 }
 
 .serviceBox a:hover {

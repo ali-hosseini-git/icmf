@@ -15,7 +15,6 @@ class lang extends system{
 		if(!empty($_SESSION['lang'])){
 			$langCode = $_SESSION['lang'];
 		}else{
-			echo 'lang: ' . $settings['lang'];
 			$langCode = $settings['lang'];
 		}
 		
