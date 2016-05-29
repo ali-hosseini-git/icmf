@@ -1,0 +1,75 @@
+<div class="clearFix" style="padding: 15px 15px 0px 15px">
+	<div class="row cell15 center miniToolsCell">
+		<ul class="LH55 x1">
+			<li class="tinySearch fa fa-sign-in paddy5 darkBlue">
+				<div id="loginBox" class="cell20 relative displayNone" style="margin-right: -5px; margin-top: 5px; padding:20px">
+					<div>
+						<input id="loginUserName" name="loginUserName" class="cell90" placeholder="{$lang.userName}/{$lang.email}" maxlength="100" required>
+					</div>
+					<div>
+						<input id="loginPassword" name="loginPassword" class="cell90" placeholder="{$lang.password}" type="password" maxlength="20" required>
+					</div>
+					<br>
+					<div>
+						<button class="cell50 LH10" onclick="
+								$('#login').farajax('loader', '/userMan/c_login',
+									   'userName=' + $('#loginUserName').val() + '::{$lang.userName}<>Multi<>1<>ce<>100' +
+									   '&amp;password=' + $('#loginPassword').val() + '::{$lang.password}<>Multi<>1<>ce<>20'			   
+								);
+								$('#loginBox').farajax('loader', '/pageLoader/v_load/loginGate');
+						 	"><span>{$lang.login}</span></button>
+					</div>
+					<br>
+					<div class="specialFont right thin">
+						<a href="/userMan/v_signUp" rel="nofollow">{$lang.signUp}</a> <br> <a href="/userMan/v_changePass" rel="nofollow">{$lang.forgetPassword}</a> 
+					</div>
+				</div>
+			</li>
+			<li class="tinySearch fa fa-search paddy5 darkBlue x1_5">
+				<div class="paddy5 relative displayNone cell40" style="margin-right: -5px; margin-top: 5px;">
+					<input id="postSearchList" name="postSearchList" class="cell98" type="search" placeholder="جستجو">
+					<div id="postSearchResult" class="postSearchResult cell93 curvedBottom boxShadow"></div>
+				</div>
+			</li>
+			<li class="tinyLike fa fa-thumbs-o-up paddy5 darkBlue">
+				<div class="paddy5 relative displayNone" style="margin-right: -5px; margin-top: 5px;">
+					<div class="g-plusone" data-annotation="inline" data-width="300"></div>
+				</div>
+			</li>
+			{if $sections.contactForm}
+			<li class="tinySendMessage fa fa-envelope-o paddy5 darkBlue">
+				<div class="paddy5 specialFont thin right relative displayNone cell30" style="margin-right: -5px; margin-top: 5px;">
+					{include file="theme/`$settings.theme`/tpl/common/sendMessage.htm"}
+				</div>
+			</li>
+			{/if}
+		</ul>
+	</div>
+	<div class="row cell70 menuCell">
+		{include file="theme/`$settings.theme`/tpl/common/menu.htm"}
+	</div>
+	<div class="row cell15 center logoCell">
+		<a title="دینا پارت" href="http://{$settings.domainName}/">
+			<img class="logo" src="theme/{$settings.theme}/img/logo.png" alt="دینا پارت">
+		</a>
+	</div>
+</div>
+{nocache}
+{if $sections.headerSplash}
+<div class="headerSplash">
+	<div class="clearFix">
+		<div class="row cell20 left h120">
+			&nbsp;
+		</div>
+		<div class="row cell60">
+			<div class="paddy10">&nbsp;</div>
+			<h1 class="LH30 darkBlue center LH40 glow">کسبینو، راهنمای شما برای کسب و کار آنلاین</h1>
+		</div>
+		<div class="row cell20 right">
+			&nbsp;
+		</div>
+	</div>
+	<div class="paddy20">&nbsp;</div>
+</div>
+{/if}
+{/nocache}

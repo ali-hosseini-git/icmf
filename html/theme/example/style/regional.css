@@ -1,0 +1,138 @@
+/**********************************************************
+* Regional css settings for this template
+**********************************************************/
+
+
+a {
+	color: #F5821F;
+}
+
+@font-face {
+    font-family: 'BRoya';
+    src: url('../font/WebRoya.eot');
+    src: url('../font/WebRoya.eot?#iefix') format('embedded-opentype'),
+         url('../font/WebRoya.woff') format('woff'),
+         url('../font/WebRoya.ttf') format('truetype'),
+         url('../font/WebRoya.svg#WebRoya') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0600–06FF;
+}
+
+
+@font-face {
+	font-family: 'Yekan';
+	src: url('../font/Yekan.eot');
+	src: url('../font/Yekan.eot?iefix') format('eot'),
+		url('../font/Yekan.woff') format('woff'), url('../font/Yekan.ttf')
+		format('truetype'), url('../font/Yekan.svg#webfontZam02nTh')
+		format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	line-height: 55px;
+	font-family: "Yekan";
+	letter-spacing: -0.5px;
+	/*text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);*/
+}
+body {
+	width: 100%;
+	font-family: BRoya;
+	font-size: 16px;
+	background: #F7F7F7;
+}
+p{
+	font-family: BRoya;
+	
+}
+.carousel-indicators .active
+{ background: #31708f; } 
+.content
+{ margin-top:20px; } 
+.adjust1{ 
+	float:left; 
+	width:100%; 
+	margin-bottom:0; } 
+.adjust2{ 
+	margin:0; } 
+.carousel-indicators li{ 
+	border :1px solid #ccc; } 
+.carousel-control{ 
+	color:#31708f; 
+	width:5%; } 
+.carousel-control:hover, .carousel-control:focus{ 
+	color:#31708f; } 
+.carousel-control.left, .carousel-control.right { 
+	background-image: none; } 
+.media-object{ 
+	margin:auto; 
+	margin-top:15%; } 
+@media screen and (max-width: 768px) 
+{ 
+	.media-object{ 
+		margin-top:0; }
+
+
+}.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-menu-left, .carousel-control .glyphicon-menu-right {
+    position: absolute;
+    top: 50%;
+     right: 0%;
+    z-index: 5;
+    display: inline-block;
+}
+    .carousel-control.left  , .carousel-control.right {
+    background-image: none !important;
+    background-repeat: repeat-x;
+    
+}
+
+.carousel-control.left span , .carousel-control.right span{
+	
+	font-size:40px;
+    color: #ee1c52;
+}
+
+.carousel-control.left span {
+	left:200px !important;
+}
+.carousel-control.right span {
+	right:200px;
+}
+
+.footer{
+	background-color:#e6e6e6;
+}
+
+.navbar.navbar-default, .navbar.navbar-default{
+	margin:0px;
+	opacity: 0.7;
+}
+
+.nav.navbar-nav li a ,.nav.navbar-nav li a b, .navbar-brand {
+	color:#fff !important;
+}
+
+.nav.navbar-nav li a:hover ,.nav.navbar-nav li a b, .navbar-brand {
+	color:#ee1c52 !important;
+}
+
+.nav.navbar-nav li a ,.nav.navbar-nav li a b, .navbar-brand {
+	color:#fff !important;
+}
+.about-us , .samples , .customers , .comments{
+	margin:50px auto;
+	text-align: center;
+	color:#ee1c52;
+}
+.dropdown-menu{
+	background-color:#222222 !important;
+}
+
+.service-box-content img{
+	width:250px;
+	margin:auto;
+
+	
+}

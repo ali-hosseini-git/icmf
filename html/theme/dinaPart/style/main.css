@@ -1,0 +1,467 @@
+/* ------------------------------------------------------------------
+Fonts
+------------------------------------------------------------------ */
+@font-face {
+	font-family: 'Yekan';
+	src: url('../font/Yekan.eot');
+	src: url('../font/Yekan.eot?iefix') format('eot'),
+		 url('../font/Yekan.woff') format('woff'), 
+		 url('../font/Yekan.ttf') format('truetype'), 
+		 url('../font/Yekan.svg#webfontZam02nTh') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mitra';
+    src: url('../font/BMitra.eot');
+    src: url('../font/BMitra.eot?#iefix') format('embedded-opentype'),
+         url('../font/BMitra.woff') format('woff'),
+         url('../font/BMitra.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0600–06FF;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Yekan";
+}
+/* ------------------------------------------------------------------
+General Styles
+------------------------------------------------------------------ */
+
+body {
+	background: #fff;
+	overflow-x: hidden;
+	-ms-overflow-style: scrollbar;
+	font: 400 14px/1.8 "Mitra";
+	color: #777;
+}
+
+/* ------------------------------------------------------------------
+Typography
+------------------------------------------------------------------- */
+
+a {
+	color: rgba(17, 17, 17, 0.55);
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+	color: #111;
+	outline: 0;
+}
+
+.bg-dark a {
+	color: #aaa;
+}
+
+.bg-dark a:hover,
+.bg-dark a:focus {
+	color: #fff;
+}
+
+.text-light {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.text-light h1, .text-light h2, .text-light h3, .text-light h4, .text-light h5, .text-light h6,
+.text-light .h1, .text-light .h2, .text-light .h3, .text-light .h4, .text-light .h5, .text-light .h6 {
+	color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	line-height: 1.4;
+	font-weight: 400;
+	color: #111;
+}
+
+h1, .h1 {
+	font-size: 28px;
+}
+
+h2, .h2 {
+	font-size: 24px;
+}
+
+h3, .h3 {
+	font-size: 18px;
+}
+
+h4, .h4 {
+	font-size: 16px;
+}
+
+h5, .h5 {
+	font-size: 14px;
+}
+
+h6, .h6 {
+	font-size: 12px;
+}
+
+p, ol, ul, blockquote {
+	margin: 0 0 20px;
+}
+
+blockquote {
+	border-color: #f7f7f7;
+}
+
+blockquote.serif-quote {
+	border: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.font-alt {
+	font-family: "Mitra", Roya;
+	text-transform: uppercase;
+}
+
+.font-serif {
+	font-family: "Roya", "Times New Roman", sans-serif;
+	font-style: italic;
+}
+
+.rotate {
+	text-shadow: none !important;
+}
+
+/* ------------------------------------------------------------------
+Progress bars
+------------------------------------------------------------------- */
+
+.progress {
+	overflow: visible;
+	height: 4px;
+}
+
+.progress-title {
+	margin-top: 0;
+}
+
+.progress-bar {
+	position: relative;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	    -ms-border-radius: 4px;
+	     -o-border-radius: 4px;
+	        border-radius: 4px;
+}
+
+.progress-bar.pb-dark {
+	background: #111;
+}
+
+.progress-bar span {
+	position: absolute;
+	padding: 4px 0px;
+	display: block;
+	top: -28px;
+	right: 0;
+	opacity: 0;
+	line-height: 12px;
+	font-size: 12px;
+	color: #777;
+}
+
+/* ------------------------------------------------------------------
+Preloader
+------------------------------------------------------------------- */
+
+.page-loader {
+	background: #fff;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 9998;
+}
+
+.loader {
+	background: #ddd;
+	position: absolute;
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	left: 50%;
+	top: 50%;
+	margin: -20px 0 0 -20px;
+	text-indent: -9999em;
+	-webkit-border-radius: 100%;
+	   -moz-border-radius: 100%;
+	        border-radius: 100%;
+	-webkit-animation-fill-mode: both;
+	        animation-fill-mode: both;
+	-webkit-animation: ball-scale 1s 0s ease-in-out infinite;
+	        animation: ball-scale 1s 0s ease-in-out infinite;
+}
+
+
+@-webkit-keyframes ball-scale {
+
+	0% {
+		-webkit-transform: scale(0);
+		   -moz-transform: scale(0);
+		    -ms-transform: scale(0);
+		     -o-transform: scale(0);
+		        transform: scale(0);
+	}
+
+	100% {
+		opacity: 0;
+		-webkit-transform: scale(1);
+		   -moz-transform: scale(1);
+		    -ms-transform: scale(1);
+		     -o-transform: scale(1);
+		        transform: scale(1);
+	}
+
+}
+
+@keyframes ball-scale {
+
+	0% {
+		-webkit-transform: scale(0);
+		   -moz-transform: scale(0);
+		    -ms-transform: scale(0);
+		     -o-transform: scale(0);
+		        transform: scale(0);
+	}
+
+	100% {
+		opacity: 0;
+		-webkit-transform: scale(1);
+		   -moz-transform: scale(1);
+		    -ms-transform: scale(1);
+		     -o-transform: scale(1);
+		        transform: scale(1);
+	}
+
+}
+
+/* -------------------------------------------------------------------
+Scroll to top
+------------------------------------------------------------------- */
+
+.scroll-up {
+	position: fixed;
+	display: none;
+	bottom: 7px;
+	right: 7px;
+	z-index: 999;
+}
+
+.scroll-up a {
+	background: #fff;
+	display: block;
+	height: 28px;
+	width: 28px;
+	text-align: center;
+	line-height: 28px;
+	font-size: 14px;
+	color: #000;
+	opacity: 0.6;
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+		 -o-border-radius: 2px;
+			border-radius: 2px;
+}
+
+.scroll-up a:hover,
+.scroll-up a:active {
+	opacity: 1;
+	color: #000;
+}
+
+/* -------------------------------------------------------------------
+Navigation Bar
+------------------------------------------------------------------- */
+
+.navbar {
+	background: #fff;
+}
+
+.nav li {
+	padding: 10px 0;
+	border-top: 4px solid #fff;
+	color: #292b80;
+	font-family: Yekan;
+}
+
+.nav li:hover {
+	border-top: 4px solid;
+	border-top-color: rgba(241, 132, 31, 0.7);
+}
+
+/* -------------------------------------------------------------------
+Slider
+------------------------------------------------------------------- */
+
+.carousel a{
+	color: rgb(241, 132, 31);
+}
+
+/* -------------------------------------------------------------------
+News ticker
+------------------------------------------------------------------- */
+
+@keyframes ticker {
+	0%   {margin-top: 0}
+	25%  {margin-top: -60px}
+	50%  {margin-top: -120px}
+	75%  {margin-top: -180px}
+	100% {margin-top: 0}
+}
+
+.news {
+	height: 60px;
+	overflow: hidden;
+	-webkit-user-select: none;
+	margin: auto ;
+	font-size: 30px;
+	text-align:center;
+	
+} 
+
+.news span {
+	float: left;
+	color: #fff;
+	padding: 6px;
+	position: relative;
+	top: 1%;
+	-webkit-font-smoothing: antialiased;
+	-webkit-user-select: none;
+	cursor: pointer
+}
+
+.news ul {
+	float: ;
+	padding-left: 20px;
+	animation: ticker 20s cubic-bezier(1, 0, .5, 0) infinite;
+	-webkit-user-select: none
+}
+
+.news ul li {
+	line-height: 60px; 
+	list-style: none
+}
+
+.news ul li a {
+	color: #fff;
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	-webkit-user-select: none
+}
+
+.news ul:hover { 
+	animation-play-state: paused 
+}
+
+.news span:hover+ul { 
+	animation-play-state: paused 
+}
+
+.blue { 
+	background: #004a90;
+	margin-bottom:40px;
+}
+
+.blue span { 
+	background: #2c66be 
+}
+
+/* -------------------------------------------------------------------
+Responsive Media Querries
+------------------------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 500px) {
+
+}
+
+
+/*-------------- profile img--------- */
+
+
+.form-comment{
+
+	margin:auto;
+	padding: 100px;
+	background-color:#0d3477;
+	color:#fff;
+	
+
+}
+
+.no-border{
+	border:0px ;
+}
+
+.carousel-indicators .active {
+    width: 20px;
+    height: 20px;
+}
+
+.carousel-indicators li {
+    width: 18px;
+    height: 18px;
+}
+
+ 
+ .news>ul>li>a{
+
+ 	padding:20px;
+ }
+ 
+ .carousel-control2 {
+  padding-top:10%;
+  width:5%;
+}
+
+.slider-corner{
+	margin-right:80px;
+}
+
+.carousel-control2{
+	color: #0d3477;
+	font-size:40px;
+	text-align:center;
+}
+ 
+ .slider-anchor{
+ 	text-align:center
+ }
+
+
+
+
+.col-rm-pad{
+	padding-left:0px;
+	padding-right:0px;
+	margin-left: 0px;
+	margin-right:0px;
+
+}
+.comments1{
+	margin:20px;
+	padding:20px;
+	font-size:16px;
+}
+
+.slider-box{
+	margin-top:40px;
+}

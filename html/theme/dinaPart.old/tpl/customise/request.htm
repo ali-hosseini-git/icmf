@@ -1,0 +1,25 @@
+<div id="requestForm" class="paddy10">
+	<div class="paddy2">
+		<input id="requestFormType" name="requestFormType" type="hidden" class="cell96 h50 x1_5" placeholder="{$lang.type}" value="{$requestFormType}">
+	</div>
+	<div class="paddy2">
+		<input id="requestFormFirstName" name="requestFormFirstName" class="cell96 h50 x1_5" placeholder="{$lang.firstName}" value="{$smarty.session.firstName}">
+	</div>
+	<div class="paddy2">
+		<input id="requestFormLastName" name="requestFormLastName" class="cell96 h50 x1_5" placeholder="{$lang.lastName}" value="{$smarty.session.lastName}">
+	</div>
+	<div class="paddy2">
+		<input id="requestFormEmail" name="requestFormEmail" class="cell96 h50 x1_5" placeholder="{$lang.email}" value="{$smarty.session.email}">
+	</div>
+	<div class="paddy2">
+		<input id="requestFormMobile" name="requestFormMobile" class="cell96 h50 x1_5" placeholder="{$lang.mobile}">
+	</div>
+	<br>
+	<button onclick="$('#content').farajax('loader', '/crm/c_addObject',
+		'subject=' + $('#requestFormType').val() + '::{$lang.subject}<>Multi<>1<>ce<>100' + 
+		'&firstName=' + $('#requestFormFirstName').val() + '::{$lang.firstName}<>Multi<>1<>ce<>100' + 
+		'&lastName=' + $('#requestFormLastName').val() + '::{$lang.lastName}<>Multi<>1<>nce<>100' + 
+		'&email=' + $('#requestFormEmail').val() + '::{$lang.email}<>Mail<>1<>ce<>100' +
+		'&mobile=' + $('#requestFormMobile').val() + '::{$lang.mobile}<>Number<>1<>ce<>11<>09000000000<>09999999999'
+	);">{$lang.send}</button>
+</div>

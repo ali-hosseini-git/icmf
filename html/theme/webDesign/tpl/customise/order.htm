@@ -1,0 +1,40 @@
+{nocache}
+<section id="order" class="paddy10">
+	<div class="left">
+		<span id="closeModal" class="fa fa-close pointer"></span>
+	</div>
+	<h1>سفارش کار</h1>
+	<div class="zeroDis">POPUP: #</div>
+	<div><h2>شما {$smarty.post.plan} را با قیمت {$smarty.post.price} تومان انتخاب نموده‌اید.</h2></div>
+	<div class="paddy5 curvedFull clearFix">
+		<div class="row cell90"><input id="orderFirstName" name="orderFirstName" class="cell96 x1_5 paddy5" placeholder="{$lang.firstName}"></div>
+		<div class="row cell10 center"><span class="fa fa-user fa-3x"></span></div>
+	</div>
+	<div class="paddy5 curvedFull clearFix">
+		<div class="row cell90"><input id="orderLastName" name="orderLastName" class="cell96 x1_5 paddy5" placeholder="{$lang.lastName}"></div>
+		<div class="row cell10 center"><span class="fa fa-users fa-3x"></span></div>
+	</div>
+	<div class="paddy5 curvedFull clearFix">
+		<div class="row cell90"><input id="orderEmail" name="orderEmail" class="cell96 x1_5 paddy5" placeholder="{$lang.email}"></div>
+		<div class="row cell10 center"><span class="fa fa-envelope-o fa-3x"></span></div>
+	</div>
+	<div class="paddy5 curvedFull clearFix">
+		<div class="row cell90"><input id="orderMobile" name="orderMobile" class="cell96 x1_5 paddy5" placeholder="{$lang.mobile}"></div>
+		<div class="row cell10 center"><span class="fa fa-mobile fa-3x"></span></div>
+	</div>
+	<div class="paddy5 curvedFull clearFix">
+		<div class="row cell90"><textarea id="orderDes" name="orderDes" class="cell96 x1_5 paddy5" placeholder="{$lang.description}"></textarea></div>
+		<div class="row cell10 center"><span class="fa fa-comment fa-3x"></span></div>
+		<div class="clear"><h3>در صورتیکه توضیحات خاصی در مورد سایت خود دارید، لطفا در این قسمت ذکر نمایید.</h3></div>
+	</div>
+	<br>
+	<button class="cell30 x1_2" onclick="$('#content').farajax('loader', '/crm/c_addObject',
+		'subject=سفارش سایت {$smarty.post.plan}::{$lang.subject}<>Multi<>1<>ce<>45' +
+		'&firstName=' + $('#orderFirstName').val() + '::{$lang.firstName}<>Multi<>1<>ce<>100' + 
+		'&lastName=' + $('#orderLastName').val() + '::{$lang.lastName}<>Multi<>1<>nce<>100' + 
+		'&email=' + $('#orderEmail').val() + '::{$lang.email}<>Mail<>1<>ce<>100' + 
+		'&mobile=' + $('#orderMobile').val() + '::{$lang.mobile}<>Number<>1<>ce<>11<>09100000000<>09999999999'+
+		'&description=' + $('#orderDes').val() + '::{$lang.description}<>Multi<>1<>nce<>500'
+	);">ارسال</button>
+</section>
+{/nocache}

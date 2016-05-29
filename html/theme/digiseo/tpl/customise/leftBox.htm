@@ -1,0 +1,51 @@
+<aside>
+	<div class="blockquote curvedFull center">
+		<h1>خبرنامه</h1>
+		<div class="paddy2">
+			<input id="requestFormType" name="requestFormType" type="hidden" class="cell96" placeholder="{$lang.type}" value="عضویت در خبرنامه">
+		</div>
+		<div class="paddy2">
+			<input id="requestFormFirstName" name="requestFormFirstName" class="cell96" placeholder="{$lang.firstName}" value="{$smarty.session.firstName}">
+		</div>
+		<div class="paddy2">
+			<input id="requestFormLastName" name="requestFormLastName" class="cell96" placeholder="{$lang.lastName}" value="{$smarty.session.lastName}">
+		</div>
+		<div class="paddy2">
+			<input id="requestFormEmail" name="requestFormEmail" class="cell96" placeholder="{$lang.email}" value="{$smarty.session.email}">
+		</div>
+		<div class="paddy2">
+			<input id="requestFormMobile" name="requestFormMobile" class="cell96" placeholder="{$lang.mobile}">
+		</div>
+		<br>
+		<button onclick="$('#content').farajax('loader', '/crm/c_addObject',
+			'subject=' + $('#requestFormType').val() + '::{$lang.subject}<>Multi<>1<>ce<>100' + 
+			'&firstName=' + $('#requestFormFirstName').val() + '::{$lang.firstName}<>Multi<>1<>ce<>100' + 
+			'&lastName=' + $('#requestFormLastName').val() + '::{$lang.lastName}<>Multi<>1<>nce<>100' + 
+			'&email=' + $('#requestFormEmail').val() + '::{$lang.email}<>Mail<>1<>ce<>100' +
+			'&mobile=' + $('#requestFormMobile').val() + '::{$lang.mobile}<>Number<>1<>ce<>11<>09000000000<>09999999999'
+		);">عضو شو</button>
+	</div>
+	<br>
+	<div class="blockquote curvedFull center">
+		<h1>موضوعات</h1>
+		{$postCategory}
+	</div>
+	<br>
+	<div class="blockquote curvedFull">
+		<div class="tabs">
+			<div class="subTab1 subTabCss curvedTop" id="tRadio"><b>رادیو کسبینو</b></div>
+			<div class="subTab1 subTabCss curvedTop" id="tCinema"><b>سینما کسبینو</b></div>
+			<!-- <div class="subTab1 subTabCss curvedTop" id="tCinema"><b>سئو باکس</b></div> -->
+			<!-- <div class="subTab2 subTabCss curvedTop" id="tUni">آموزش سئو (دانشگاه سئو)</div> -->
+		</div>
+		<div id="tabContent1" class="tabConetentSytle curvedFull">{nocache}{$voicePost}{/nocache}</div>
+	</div>
+	<br>
+	<div class="blockquote curvedFull">
+		<div class="tabs">
+			<div class="subTab2 subTabCss curvedTop" id="tComment"><b>نظرات</b></div>
+			<div class="subTab2 subTabCss curvedTop" id="tTopPost"><b>مطالب برتر</b></div>
+		</div>
+		<div id="tabContent2" class="tabConetentSytle curvedFull">{nocache}{$lastComment}{/nocache}</div>
+	</div>
+</aside>

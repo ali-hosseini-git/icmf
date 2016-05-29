@@ -1,0 +1,386 @@
+{nocache}
+{function name=cooperationregForm value=''}
+<div id="cooperationregForm" class="paddy10">
+	<div class="paddy2">
+		<input id="cooperationRegFormType" name="cooperationRegFormType" type="hidden" class="cell96 h50 x1_5" placeholder="{$lang.type}">
+	</div>
+	<div class="paddy2">
+		<input id="cooperationRegFormFirstName" name="cooperationRegFormFirstName" class="cell96 h50 x1_5" placeholder="{$lang.firstName}" value="{$smarty.session.firstName}">
+	</div>
+	<div class="paddy2">
+		<input id="cooperationRegFormLastName" name="cooperationRegFormLastName" class="cell96 h50 x1_5" placeholder="{$lang.lastName}" value="{$smarty.session.lastName}">
+	</div>
+	<div class="paddy2">
+		<input id="cooperationRegFormEmail" name="cooperationRegFormEmail" class="cell96 h50 x1_5" placeholder="{$lang.email}" value="{$smarty.session.email}">
+	</div>
+	<div class="paddy2">
+		<input id="cooperationRegFormMobile" name="cooperationRegFormMobile" class="cell96 h50 x1_5" placeholder="{$lang.mobile}">
+	</div>
+	<br>
+	<button class="cell20 LH40 centerObject" onclick="$('#content').farajax('loader', '/crm/c_addObject',
+		'subject=' + $('#{$value} #cooperationRegFormType').val() + '::{$lang.subject}<>Multi<>1<>ce<>100' + 
+		'&firstName=' + $('#{$value} #cooperationRegFormFirstName').val() + '::{$lang.firstName}<>Multi<>1<>ce<>100' + 
+		'&lastName=' + $('#{$value} #cooperationRegFormLastName').val() + '::{$lang.lastName}<>Multi<>1<>nce<>100' + 
+		'&email=' + $('#{$value} #cooperationRegFormEmail').val() + '::{$lang.email}<>Mail<>1<>ce<>100' +
+		'&mobile=' + $('#{$value} #cooperationRegFormMobile').val() + '::{$lang.mobile}<>Number<>1<>ce<>11<>09000000000<>09999999999'
+	);">{$lang.send}</button>
+</div>
+{/function}
+<article class="whiteFrame paddy10 curvedFull">
+	<h1>استخدام در کسبینو</h1>
+	<div class="cell80 clearFix centerObject">
+		<div class="row cell30">
+			<div class="paddy10">
+				<div class="curvedFull h400 hover whiteFrame paddy10">
+					<div class="circle200 centerObject" style="background: url('theme/{$settings.theme}/img/programming.jpg') no-repeat center center"></div>
+					<br><br><br><br><br><br><br>
+					<div class="center">
+						<button id="cooperationWebProgramming">برنامه نویس وب هستید؟</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row cell5">&nbsp;</div>
+		<div class="row cell30">
+			<div class="paddy10">
+				<div class="curvedFull h400 hover whiteFrame paddy10">
+					<div class="circle200 centerObject" style="background: url('theme/{$settings.theme}/img/handwriting.jpg') no-repeat center center"></div>
+					<br><br><br><br><br><br><br>
+					<div class="center">
+						<button id="cooperationContentWriting">نویسنده متن هستید؟</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row cell5">&nbsp;</div>
+		<div class="row cell30">
+			<div class="paddy10">
+				<div class="curvedFull h400 hover whiteFrame paddy10">
+					<div class="circle200 centerObject" style="background: url('theme/{$settings.theme}/img/salesman.jpg') no-repeat center center"></div>
+					<br><br><br><br><br><br><br>
+					<div class="center">
+						<button id="cooperationSales">مشاور فروش هستید؟</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br><div class="cell80 clearFix centerObject">
+		<div class="row cell30">
+			<div class="paddy10">
+				<div class="curvedFull h400 hover whiteFrame paddy10">
+					<div class="circle200 centerObject" style="background: url('theme/{$settings.theme}/img/web-design.jpg') no-repeat center center"></div>
+					<br><br><br><br><br><br><br>
+					<div class="center">
+						<button id="cooperationWebDesigning">طراح وب هستید؟</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row cell5">&nbsp;</div>
+		<div class="row cell30">
+			<div class="paddy10">
+				<div class="curvedFull h400 hover whiteFrame paddy10">
+					<div class="circle200 centerObject" style="background: url('theme/{$settings.theme}/img/SEO.jpg') no-repeat center center"></div>
+					<br><br><br><br><br><br><br>
+					<div class="center">
+						<button id="cooperationSEO">سئو کار هستید؟</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row cell5">&nbsp;</div>
+		<div class="row cell30">
+			<div class="paddy10">
+				<div class="curvedFull h400 hover whiteFrame paddy10">
+					<div class="circle200 centerObject" style="background: url('theme/{$settings.theme}/img/mobile-programming.jpg') no-repeat center center"></div>
+					<br><br><br><br><br><br><br>
+					<div class="center">
+						<button id="cooperationMobileProgramming">برنامه نویس موبایل هستید؟</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="cell80 clearFix centerObject">
+		<div class="row cell30">
+			<div class="paddy10">
+				<div class="curvedFull h400 hover whiteFrame paddy10">
+					<div class="circle200 centerObject" style="background: url('theme/{$settings.theme}/img/social-network-publisher.jpg') no-repeat center center"></div>
+					<br><br><br><br><br><br><br>
+					<div class="center">
+						<button id="cooperationPublisher">شبکه اجتماعی قوی دارید؟</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row cell5">&nbsp;</div>
+		<div class="row cell30">
+			<div class="paddy10">
+				<div class="curvedFull h400 hover whiteFrame paddy10">
+					<div class="circle200 centerObject" style="background: url('theme/{$settings.theme}/img/translator.jpg') no-repeat center center"></div>
+					<br><br><br><br><br><br><br>
+					<div class="center">
+						<button id="cooperationTranslation">مترجم زبان انگلیسی هستید؟</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row cell5">&nbsp;</div>
+		<div class="row cell30">
+			<div class="paddy10">
+				&nbsp;
+			</div>
+		</div>
+	</div>
+	
+	<div id="cooperationWebProgrammingConditions" class="whiteFrame paddy10 curvedFull clearFix displayNone">
+		<h2>استخدام برنامه نویس وب</h2>
+		<div class="row cell10">&nbsp;</div>
+		<div class="row cell50">
+			<div class="clearFix">
+				<div class="row cellAuto paddy20 fa fa-coffee fa-2x"></div>
+				<div class="row cellAuto"><h2 class="LH70">شرایط عمومی</h2></div>
+			</div>
+			<ul class="listStyleDisc">
+				<li>حقوق: توافقی و وابسته به تخصص شما</li>
+				<li>بیمه: شامل بیمه کامل تامین اجتماعی</li>
+				<li>ساعات کار: طبق قانون کار</li>
+				<li>مزایا: طبق قانون کار</li>
+			</ul>
+			<div class="clearFix">
+				<div class="row cellAuto paddy20 fa fa fa-trophy fa-2x"></div>
+				<div class="row cellAuto"><h2 class="LH70">شرایط خصوصی</h2></div>
+			</div>
+			<ul class="listStyleDisc">
+				<li>نوع همکاری: تمام وقت</li>
+				<li>متخصص در برنامه نویسی وب زبان PHP</li>
+				<li>آشنایی کامل به OOP</li>
+				<li>آشنایی با SMARTY</li>
+				<li>آشنایی با MVC</li>
+			</ul>
+		</div>
+		<div class="row cell40">
+			{cooperationregForm value='cooperationWebProgrammingConditions'}
+		</div>
+	</div>
+	
+	<div id="cooperationContentWritingConditions" class="whiteFrame paddy10 curvedFull clearFix displayNone">
+		<h2>استخدام نویسنده مطلب</h2>
+		<div class="row cell10">&nbsp;</div>
+		<div class="row cell50">
+			<div class="clearFix">
+				<div class="row cellAuto paddy20 fa fa-coffee fa-2x"></div>
+				<div class="row cellAuto"><h2 class="LH70">شرایط عمومی</h2></div>
+			</div>
+			<ul class="listStyleDisc">
+				<li>نوع همکاری: دورکاری</li>
+				<li>حقوق: توافقی و وابسته به تخصص شما</li>
+				<li>بیمه: -</li>
+				<li>ساعات کار: -</li>
+				<li>مزایا: -</li>
+			</ul>
+			<div class="clearFix">
+				<div class="row cellAuto paddy20 fa fa fa-trophy fa-2x"></div>
+				<div class="row cellAuto"><h2 class="LH70">شرایط خصوصی</h2></div>
+			</div>
+			<ul class="listStyleDisc">
+				<li>نویسندگی در یک یا چند موضوع زیر:</li>
+				<li>طراحی سایت</li>
+				<li>برنامه نویسی سایت</li>
+				<li>بازاریابی</li>
+				<li>فروش</li>
+				<li>برند سازی</li>
+				<li>مدیریت</li>
+			</ul>
+		</div>
+		<div class="row cell40">
+			{cooperationregForm value='cooperationContentWritingConditions'}
+		</div>
+	</div>
+	
+	<div id="cooperationSalesConditions" class="whiteFrame paddy10 curvedFull clearFix displayNone">
+		<h2>استخدام متخصص فروش</h2>
+		<div class="row cell10">&nbsp;</div>
+		<div class="row cell50">
+			<div class="clearFix">
+				<div class="row cellAuto paddy20 fa fa-coffee fa-2x"></div>
+				<div class="row cellAuto"><h2 class="LH70">شرایط عمومی</h2></div>
+			</div>
+			<ul class="listStyleDisc">
+				<li>نوع همکاری: پورسانتی</li>
+				<li>حقوق: -</li>
+				<li>بیمه: -</li>
+				<li>ساعات کار: -</li>
+				<li>مزایا: پورسانت درصدی از فروش</li>
+			</ul>
+			<div class="clearFix">
+				<div class="row cellAuto paddy20 fa fa fa-trophy fa-2x"></div>
+				<div class="row cellAuto"><h2 class="LH70">شرایط خصوصی</h2></div>
+			</div>
+			<ul class="listStyleDisc">
+				<li>آشنا به فروش آنلاین</li>
+				<li>توانایی تهینه پروپوزال</li>
+				<li>توانایی تهیه قرارداد</li>
+				<li>پیگیری و نگهداری مشتریان</li>
+			</ul>
+		</div>
+		<div class="row cell40">
+			{cooperationregForm value='cooperationSalesConditions'}
+		</div>
+	</div>
+	<div id="cooperationWebDesigningConditions" class="whiteFrame paddy10 curvedFull clearFix displayNone">
+		<h2>استخدام طراح سایت</h2>
+		<div class="row cell10">&nbsp;</div>
+		<div class="row cell50">
+			<div class="clearFix">
+				<div class="row cellAuto paddy20 fa fa-coffee fa-2x"></div>
+				<div class="row cellAuto"><h2 class="LH70">شرایط عمومی</h2></div>
+			</div>
+			<ul class="listStyleDisc">
+				<li>نوع همکاری: پروژه‌ای و دورکاری</li>
+				<li>حقوق: توافقی و وابسته به تخصص شما</li>
+				<li>بیمه: -</li>
+				<li>ساعات کار: -</li>
+				<li>مزایا: -</li>
+			</ul>
+			<div class="clearFix">
+				<div class="row cellAuto paddy20 fa fa fa-trophy fa-2x"></div>
+				<div class="row cellAuto"><h2 class="LH70">شرایط خصوصی</h2></div>
+			</div>
+			<ul class="listStyleDisc">
+				<li>مسلط به HTML5</li>
+				<li>مسلط به JQuery</li>
+				<li>مسلط به CSS</li>
+			</ul>
+		</div>
+		<div class="row cell40">
+			{cooperationregForm value='cooperationWebDesigningConditions'}
+		</div>
+	</div>
+	
+	<div id="cooperationSEOConditions" class="whiteFrame paddy10 curvedFull clearFix displayNone">
+		<h2>استخدام سئو کار</h2>
+		<div class="row cell10">&nbsp;</div>
+		<div class="row cell50">
+			<div class="clearFix">
+				<div class="row cellAuto paddy20 fa fa-coffee fa-2x"></div>
+				<div class="row cellAuto"><h2 class="LH70">شرایط عمومی</h2></div>
+			</div>
+			<ul class="listStyleDisc">
+				<li>نوع همکاری: پروژه‌ای یا تمام وقت</li>
+				<li>حقوق: توافقی و وابسته به تخصص شما</li>
+				<li>بیمه: شامل بیمه کامل تامین اجتماعی</li>
+				<li>ساعات کار: طبق قانون کار</li>
+				<li>مزایا: طبق قانون کار</li>
+			</ul>
+			<div class="clearFix">
+				<div class="row cellAuto paddy20 fa fa fa-trophy fa-2x"></div>
+				<div class="row cellAuto"><h2 class="LH70">شرایط خصوصی</h2></div>
+			</div>
+			<ul class="listStyleDisc">
+				<li>قابلیت مدیریت و راهبری تیم</li>
+				<li>تسلط کامل به بهینه سازی فنی</li>
+				<li>روابط عمومی خوب</li>
+				<li>آشنایی با MVC</li>
+			</ul>
+		</div>
+		<div class="row cell40">
+			{cooperationregForm value='cooperationSEOConditions'}
+		</div>
+	</div>
+	
+	<div id="cooperationMobileProgrammingConditions" class="whiteFrame paddy10 curvedFull clearFix displayNone">
+		<h2>استخدام برنامه نویس موبایل</h2>
+		<div class="row cell10">&nbsp;</div>
+		<div class="row cell50">
+			<div class="clearFix">
+				<div class="row cellAuto paddy20 fa fa-coffee fa-2x"></div>
+				<div class="row cellAuto"><h2 class="LH70">شرایط عمومی</h2></div>
+			</div>
+			<ul class="listStyleDisc">
+				<li>نوع همکاری: پروژه‌ای و دورکاری</li>
+				<li>حقوق: توافقی و وابسته به تخصص شما</li>
+				<li>بیمه: -</li>
+				<li>ساعات کار: -</li>
+				<li>مزایا: -</li>
+			</ul>
+			<div class="clearFix">
+				<div class="row cellAuto paddy20 fa fa fa-trophy fa-2x"></div>
+				<div class="row cellAuto"><h2 class="LH70">شرایط خصوصی</h2></div>
+			</div>
+			<ul class="listStyleDisc">
+				<li>مسلط به برنامه نویسی Android</li>
+				<li>مسلط به برنامه نویسی IOS</li>
+			</ul>
+		</div>
+		<div class="row cell40">
+			{cooperationregForm value='cooperationMobileProgrammingConditions'}
+		</div>
+	</div>
+	
+	<div id="cooperationPublisherConditions" class="whiteFrame paddy10 curvedFull clearFix displayNone">
+		<h2>استخدام منتشر کننده محتوا</h2>
+		<div class="row cell10">&nbsp;</div>
+		<div class="row cell50">
+			<div class="clearFix">
+				<div class="row cellAuto paddy20 fa fa-coffee fa-2x"></div>
+				<div class="row cellAuto"><h2 class="LH70">شرایط عمومی</h2></div>
+			</div>
+			<ul class="listStyleDisc">
+				<li>نوع همکاری: دورکاری</li>
+				<li>حقوق: توافقی و وابسته به تخصص شما</li>
+				<li>بیمه: -</li>
+				<li>ساعات کار: -</li>
+				<li>مزایا: -</li>
+			</ul>
+			<div class="clearFix">
+				<div class="row cellAuto paddy20 fa fa fa-trophy fa-2x"></div>
+				<div class="row cellAuto"><h2 class="LH70">شرایط خصوصی</h2></div>
+			</div>
+			<ul class="listStyleDisc">
+				<li>دارای شبکه اجتماعی قوی (ارتباطات خوب)</li>
+				<li>ترجیحا خانم</li>
+			</ul>
+		</div>
+		<div class="row cell40">
+			{cooperationregForm value='cooperationPublisherConditions'}
+		</div>
+	</div>
+	
+	<div id="cooperationTranslationConditions" class="whiteFrame paddy10 curvedFull clearFix displayNone">
+		<h2>استخدام مترجم مطلب</h2>
+		<div class="row cell10">&nbsp;</div>
+		<div class="row cell50">
+			<div class="clearFix">
+				<div class="row cellAuto paddy20 fa fa-coffee fa-2x"></div>
+				<div class="row cellAuto"><h2 class="LH70">شرایط عمومی</h2></div>
+			</div>
+			<ul class="listStyleDisc">
+				<li>نوع همکاری: دورکاری</li>
+				<li>حقوق: توافقی و وابسته به تخصص شما</li>
+				<li>بیمه: -</li>
+				<li>ساعات کار: -</li>
+				<li>مزایا: -</li>
+			</ul>
+			<div class="clearFix">
+				<div class="row cellAuto paddy20 fa fa fa-trophy fa-2x"></div>
+				<div class="row cellAuto"><h2 class="LH70">شرایط خصوصی</h2></div>
+			</div>
+			<ul class="listStyleDisc">
+				<li>ترجمه در یک یا چند موضوع زیر:</li>
+				<li>طراحی سایت</li>
+				<li>برنامه نویسی سایت</li>
+				<li>بازاریابی</li>
+				<li>فروش</li>
+				<li>برند سازی</li>
+				<li>مدیریت</li>
+			</ul>
+		</div>
+		<div class="row cell40">
+			{cooperationregForm value='cooperationTranslationConditions'}
+		</div>
+	</div>
+</article>
+{/nocache}

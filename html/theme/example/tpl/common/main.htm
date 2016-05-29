@@ -1,0 +1,158 @@
+{include file="theme/`$settings.theme`/tpl/common/schema.htm"}
+<body id="body" style="direction: {$lang.direction};">
+{nocache}
+{if $sections.basket}
+<section id="basket" class="basket">
+	{nocache}{include file="theme/`$settings.theme`/tpl/common/basket.htm"}{/nocache}
+</section>
+{/if}
+{if $sections.nav}
+{nocache}{include file="theme/`$settings.theme`/tpl/common/nav.htm"}{/nocache}
+
+{/if}
+{/nocache}
+{nocache}
+{if $sections.slider}
+<header class="header">{include file="theme/`$settings.theme`/tpl/common/slider.htm"}</header>
+{/if}
+{/nocache}
+<!-- Wrapper -->
+<div id="wrapper" class="wrapper">
+
+	<main id="container" class="container">
+		
+      	 <h1 class="about-us">درباره ما</h1>
+        <p>ما که هستیم؟
+			ما اولین شرکتی نیستیم که اقدام به ارائه خدمات تبلیغات اینترنتی در ایران کرده است، اما شرکتی کاملا حرفه ای هستیم که می توانیم نیازها و مشکلات مشتریانمان را شناسایی کنیم و برای حل آنها بهترین و موثرترین روش های روز دنیا را بر بستر دیجیتال پیشنهاد دهیم.
+			ما بخشی از خانواده بزرگترین آژانس تبلیغاتی کشور هستیم که می خواهیم در کنار شما باشیم تا از مقابل این موج بزرگ تغییر برخیزید و بر آن سوار شوید.
+			ما در «موبایت» مجموعه ای از جدیدترین، کاملترین و متفاوت ترین روش ها و ابزارهای بازاریابی و تبلیغات بر بستر اینترنت و موبایل را گرد هم آورده ایم تا بتوانیم به حضور موثر شما در فضای آنلاین و آفلاین کمک کنیم.
+			تخصص ما این است که استراتژی ها و طرح هایی را برای حضور شرکت ها و برندها در فضای دیجیتال خلق کنیم و به آنها در اجرای این استراتژی ها کمک نماییم تا به نتایج دلخواه خود برسند. ما از تمام رسانه ها و ابزارهای دیجیتال موجود در ایران و جهان برای موفقیت شما استفاده می کنیم.
+		</p>
+		 
+	<h1 class="samples">نمونه کارها</h1>
+	
+	<!-- 
+<h2>Sort</h2>
+<div id="sorts" class="button-group"> <button class="button is-checked" data-sort-by="original-order">original order</button>
+  <button class="button" data-sort-by="name">name</button>
+  <button class="button" data-sort-by="symbol">symbol</button>
+  <button class="button" data-sort-by="number">number</button>
+  <button class="button" data-sort-by="weight">weight</button>
+  <button class="button" data-sort-by="category">category</button>
+</div>
+ -->
+ 
+ 
+
+<div class="filters">
+
+  <div class="ui-group">
+    <div class="button-group js-radio-button-group" data-filter-group="color">
+      <button class="button is-checked" data-filter="">همه</button>
+      <button class="button" data-filter=".sites">سایت ها</button>
+      <button class="button" data-filter=".seoes">سئو ها</button>
+      <button class="button" data-filter=".graphics">گرافیکی</button>
+      <button class="button" data-filter=".advertisments">تبلیغاتی</button>
+    </div>
+  </div>
+
+ 
+
+
+</div>
+
+<div class="grid">
+  <div class="row">
+	  <div class=" color-shape round sites">
+	  <div class="service-box">
+		  <div class="service-box-content ">
+			  <h4><a href="http://maktabestan.ir" class="external gray"> وبسایت مکتبستان</a></h4>
+			  <img class=" img-square img-responsive" src="theme/{$settings.theme}/img/samples/maktabestan-thumbnail-280x300.png"/>
+			  <p>برای موفقیت در دنیای دیجیتال وجود یک استراتژی ضروری است. ولی بیشتر سازمان های ایرانی فاقد این نوع استراتژی اند...</p>
+		  </div>
+	  </div>
+	  </div>
+	  <div class="color-shape round sites">
+	  
+	  </div>
+	  <div class="color-shape round seoes"></div>
+	  <div class="color-shape round graphics"></div>
+	  <div class="color-shape round advertisments"></div>
+	  <div class="color-shape round seoes"></div>
+	  <div class="color-shape round advertisments"></div>
+	  <div class="color-shape round sites"></div>
+	  <div class="color-shape round seoes"></div>
+	  <div class="color-shape round graphics"></div>
+	  <div class="color-shape round sites"></div>
+	  <div class="color-shape round advertisments"></div>
+	  <div class="color-shape round graphics"></div>
+	  <div class="color-shape round sites"></div>
+	  <div class="color-shape round seoes"></div>
+	  <div class="color-shape round graphics"></div>
+	  <div class="color-shape round sites"></div>
+	  <div class="color-shape round seoes"></div>
+	  <div class="color-shape round advertisments"></div>
+	  <div class="color-shape round sites"></div>
+	  <div class="color-shape round seoes"></div>
+	  <div class="color-shape round graphics"></div>
+	  <div class="color-shape round sites"></div>
+	  <div class="color-shape round advertisments"></div>
+  </div>
+</div>
+<h1 class="comments">نظرات</h1>
+{nocache}{include file="theme/`$settings.theme`/tpl/common/comment.html"}{/nocache}
+<h1 class="customers">مشتریان</h1>
+{nocache}{include file="theme/`$settings.theme`/tpl/common/customers.html"}{/nocache}
+   
+   
+  <div class="row">
+			{nocache}
+			{if $sections.right}
+			<section id="rightBox" class="col-xs-{$sections.mobileRightWidth} col-md-{$sections.rightWidth}">
+				<h2 class="zeroDis">rightBox</h2>
+				<aside id="rightAsideContent" class="asideContent">
+					{nocache}{include file="theme/`$settings.theme`/tpl/customise/rightBox.htm"}{/nocache}
+				</aside>
+			</section>
+			{/if}
+			{if $sections.center}
+			<section id="centerBox" class="col-xs-{$sections.mobileCenterWidth} col-md-{$sections.centerWidth}">
+				<!-- <h2 class="zeroDis">content</h2> -->
+				<div id="content" class="content">
+					{nocache}{$center}{/nocache}
+				</div>
+			</section>
+			{/if}
+			{if $sections.left}
+	
+			<section id="leftBox" class="col-xs-{$sections.mobileLeftWidth} col-md-{$sections.leftWidth}">
+				<!-- <h2 class="zeroDis">leftBox</h2> -->
+				<aside id="leftAsideContent" class="asideContent">
+					{nocache}{include file="theme/`$settings.theme`/tpl/customise/leftBox.htm"}{/nocache}
+				</aside>
+			</section>
+			{/if}
+			{/nocache}
+			</div>
+	</main>
+</div>
+<!--/Wrapper-->
+<!-- Footer -->
+<footer id="footer" class="footer">
+	{include file="theme/`$settings.theme`/tpl/common/footer.htm"}
+</footer>
+<!-- /Footer -->
+<section id="copyright" class="copyright text-center module-small bg-light p-t-30 p-b-30">
+	<!-- <h2 class="zeroDis">copyright</h2> -->
+	{include file="theme/`$settings.theme`/tpl/common/copyright.htm"}
+</section>
+{nocache}
+
+<script src="theme/{$settings.theme}/js/js.php"></script>
+{if $smarty.session.uType > 1}
+<script src="kernel/lib/xorg/editor/ckeditor.js"></script>
+<script src="kernel/lib/xorg/finder/ckfinder.js"></script>
+{/if}
+{include file="theme/`$settings.theme`/tpl/common/googlePlus.htm"}
+</body>
+</html>

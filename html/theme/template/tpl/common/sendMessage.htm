@@ -1,0 +1,43 @@
+<div id="contactForm">
+	<div class="paddy1">
+		<select id="contactMessageType" name="contactMessageType" style="width: 90%">
+			<option value=""> نوع پیام را مشخص نمایید </option>
+			<option value="رضایت"> رضایت </option>
+			<option value="پیشنهاد"> پیشنهاد </option>
+			<option value="انتقاد"> انتقاد </option>
+			<option value="شکایت"> شکایت </option>
+		</select>
+	</div>
+	<div class="paddy1">
+		<select id="contactDeparment" name="contactDeparment" style="width: 90%">
+			<option value=""> دپارتمان را مشخص نمایید </option>
+			<option value="فنی"> فنی </option>
+			<option value="مالی"> مالی </option>
+			<option value="فروش"> فروش </option>
+			<option value="اداری"> اداری </option>
+			<option value="مدیریت"> مدیریت </option>
+			<option value="روابط عمومی"> روابط عمومی </option>			
+			<option value="خدمات پس از فروش"> خدمات پس از فروش </option>
+		</select>
+	</div>
+	<div class="paddy1"><input id="contactSubject" name="contactSubject" class="cell94 curvedFull" placeholder="{$lang.subject}"></div>
+	<div class="paddy1"><input id="contactSender" name="contactSender" class="cell94 curvedFull" placeholder="{$lang.firstName} {$lang.lastName}"></div>
+	<div class="paddy1"><input id="contactEmail" name="contactEmail" type="email" class="cell94 curvedFull" placeholder="{$lang.email}"></div>
+	<div class="paddy1"><input id="contactMobile" name="contactMobile" class="cell94 curvedFull" placeholder="{$lang.mobile}"></div>
+	<div class="paddy1"><textarea id="contactMessage" name="contactMessage" class="cell94 curvedFull" rows="7" placeholder="{$lang.message}"></textarea></div>
+	<div class="paddy5">
+		<button class="cell30 LH20" onclick="
+			$('#content').farajax('loader', '/contact/c_sendMessage',
+				'contactMessageType=' + $('#contactMessageType').val() + '::{$lang.type}<>Multi<>1<>nce<>45' +
+				'&amp;contactDepartment=' + $('#contactDepartment').val() + '::{$lang.unit}<>Multi<>1<>nce<>45' +
+				'&amp;contactSubject=' + $('#contactSubject').val() + '::{$lang.subject}<>Multi<>1<>ce<>200' +
+				'&amp;contactSender=' + $('#contactSender').val() + '::{$lang.firstName} {$lang.lastName}<>Multi<>1<>ce<>100' +
+				'&amp;contactEmail=' + $('#contactEmail').val() + '::{$lang.email}<>Mail<>1<>ce<>100' +
+				'&amp;contactMobile=' + $('#contactMobile').val() + '::{$lang.mobile}<>Multi<>1<>nce<>11' +
+				'&amp;contactMessage=' + $('#contactMessage').val() + '::{$lang.message}<>Multi<>1<>ce<>2000'
+			);
+		">
+		{$lang.submit}
+		</button>
+	</div>
+</div>

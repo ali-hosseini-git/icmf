@@ -1,0 +1,592 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "center.htm",
+			"settings":
+			{
+				"buffer_size": 20108,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/lab/www/icmf/html/theme/mobyteWeb/tpl/common/footer.htm",
+			"settings":
+			{
+				"buffer_size": 1403,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/lab/www/icmf/html/theme/mobyteWeb/tpl/common/copyright.htm",
+			"settings":
+			{
+				"buffer_size": 454,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/lab/www/icmf/html/theme/mobyteWeb/tpl/common/main.htm",
+			"settings":
+			{
+				"buffer_size": 2652,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/lab/www/icmf/html/theme/mobyteWeb/js/js.php",
+			"settings":
+			{
+				"buffer_size": 2023,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/lab/www/icmf/html/theme/mobyteWeb/js/main.js",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/lab/www/icmf/html/theme/mobyteWeb/js/startUp.js",
+			"settings":
+			{
+				"buffer_size": 2434,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/lab/www/icmf/html/theme/mobyteWeb/style/main.css",
+			"settings":
+			{
+				"buffer_size": 44932,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/lab/www/icmf/html/theme/mobyteWeb/style/style.php",
+			"settings":
+			{
+				"buffer_size": 1417,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/lab/www/icmf/html/kernel/lib/xorg/font/etLine/et-line-font.css",
+			"settings":
+			{
+				"buffer_size": 7207,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/lab/www/icmf/html/kernel/lib/xorg/font/fontAwesome/font-awesome.min.css",
+			"settings":
+			{
+				"buffer_size": 21939,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/lab/www/icmf/html/kernel",
+		"/lab/www/icmf/html/kernel/lib",
+		"/lab/www/icmf/html/kernel/lib/xorg",
+		"/lab/www/icmf/html/kernel/lib/xorg/font",
+		"/lab/www/icmf/html/kernel/lib/xorg/font/etLine",
+		"/lab/www/icmf/html/kernel/lib/xorg/font/fontAwesome",
+		"/lab/www/icmf/html/theme",
+		"/lab/www/icmf/html/theme/mobyteWeb",
+		"/lab/www/icmf/html/theme/mobyteWeb/js",
+		"/lab/www/icmf/html/theme/mobyteWeb/style",
+		"/lab/www/icmf/html/theme/mobyteWeb/tpl",
+		"/lab/www/icmf/html/theme/mobyteWeb/tpl/common",
+		"/lab/www/icmf/html/theme/mobyteWeb/tpl/customise"
+	],
+	"file_history":
+	[
+		"/home/ali/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"style",
+			"assets/images/portfolio",
+			"work"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"theme/{$settings.theme}/img/portfolio",
+			"theme/{$settings.theme}/img/portfolio/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "center.htm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20108,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16975,
+								16975
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 8441.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/lab/www/icmf/html/theme/mobyteWeb/tpl/common/footer.htm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1403,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1403,
+								1403
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/lab/www/icmf/html/theme/mobyteWeb/tpl/common/copyright.htm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 454,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4,
+								4
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/lab/www/icmf/html/theme/mobyteWeb/tpl/common/main.htm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2652,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2219,
+								2219
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 969.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/lab/www/icmf/html/theme/mobyteWeb/js/js.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2023,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1261,
+								1261
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 51.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/lab/www/icmf/html/theme/mobyteWeb/js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/lab/www/icmf/html/theme/mobyteWeb/js/startUp.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2434,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2325,
+								2325
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1530.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/lab/www/icmf/html/theme/mobyteWeb/style/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 44932,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17436,
+								17436
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 15130.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/lab/www/icmf/html/theme/mobyteWeb/style/style.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1417,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								576,
+								576
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/lab/www/icmf/html/kernel/lib/xorg/font/etLine/et-line-font.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7207,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								366,
+								366
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/lab/www/icmf/html/kernel/lib/xorg/font/fontAwesome/font-awesome.min.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 21939,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								593,
+								593
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "icmf.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 309.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

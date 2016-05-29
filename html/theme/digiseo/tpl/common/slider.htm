@@ -1,0 +1,92 @@
+<div id="carousel1" class="carousel slide" data-ride="carousel">
+	<div class="carousel-inner">
+		<div class="overItem container">
+			<div class="row">
+				<div class="row col-xs-8 col-md-8">
+					<div class="container">
+						<h1>تحلیل وضعیت سئو سایت شما، کاملا رایگان و اتوماتیک</h1>
+						<br>
+					</div>
+					<div class="container">
+						<input id="website" class="form-control" placeholder="{$lang.website}">
+						<br>
+					</div>
+					<div class="row col-xs-6 col-md-6">
+						<div class="container">
+							<form role="form">
+								<div class="form-group">
+									<input id="firstName" class="form-control" placeholder="{$lang.firstName}">
+								</div>
+								<div class="form-group">
+									<input id="lastName" class="form-control" placeholder="{$lang.lastName}">
+								</div>
+								<div class="form-group">
+									<input id="email" type="email" class="form-control" placeholder="{$lang.email}">
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox"> Remember me</label>
+								</div>
+								<button type="submit" class="btn btn-default">Submit</button>
+							</form>
+						</div>
+					</div>
+					<div class="row col-xs-6 col-md-6">
+						<div class="container">
+							<form role="form">
+								<div class="form-group">
+									<input id="firstName" class="form-control" placeholder="{$lang.firstName}">
+								</div>
+								<div class="form-group">
+									<input id="lastName" class="form-control" placeholder="{$lang.lastName}">
+								</div>
+								<div class="form-group">
+									<input id="email" type="email" class="form-control" placeholder="{$lang.email}">
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox"> Remember me</label>
+								</div>
+								<button type="submit" class="btn btn-default">Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-4 col-md-4">
+					<div class="container someAudit">
+						A
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="item active">
+			<div class="slide1"></div>
+		</div>
+		<div class="item">
+			<div class="slide2"></div>
+		</div>
+		<div class="item">
+			<div class="slide3"></div>
+		</div>
+	</div>
+	<!-- News ticker -->
+	<!--
+	<div class="newsTicker container">
+		<div class="row">
+			{foreach from=$jsonList|json_decode item=post}
+			    <div class="col-xs-3 col-md-3">
+			    	<div class="postItem">
+				    	<b class="specialFont">
+				    		<a href="post/c_showListObject/{$post->id}_{$post->title}">{$post->title}</a>
+				    	</b>
+				    	<br><br>
+				    	<div class="text-center">
+					    	<img src="{$post->contentPath}" width="90%">
+				    	</div>
+				    	<p>{$post->brief}</p>
+				    </div>
+			    </div>
+			{/foreach}
+		</div>
+	</div>
+	-->
+	<!-- /News ticker -->
+</div>

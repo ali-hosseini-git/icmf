@@ -1,0 +1,83 @@
+{include file="theme/`$settings.theme`/tpl/common/schema.htm"}
+<body id="body" style="direction: {$lang.direction};">
+<h1 class="zeroDis">دیجیتال مارکتینگ</h1>
+<div class="page-loader" style="display: none;">
+	<div class="loader" style="display: none;">Loading...</div>
+</div>
+{include file="theme/`$settings.theme`/tpl/common/modal.htm"}
+
+<div id="temp"></div>
+{nocache}
+{if $sections.basket}
+<section id="basket" class="basket">
+	{nocache}{include file="theme/`$settings.theme`/tpl/common/basket.htm"}{/nocache}
+</section>
+{/if}
+{if $sections.topPanel}
+<section>
+	{nocache}{include file="theme/`$settings.theme`/tpl/common/topPanel.htm"}{/nocache}
+</section>
+{/if}
+{/nocache}
+{nocache}
+{if $sections.header}
+<header class="header">{include file="theme/`$settings.theme`/tpl/common/header.htm"}</header>
+{/if}
+{/nocache}
+<!-- Wrapper -->
+<div id="wrapper" class="wrapper">
+
+	<main id="container" class="container">
+		<!-- <h2 class="zeroDis">container</h2> -->
+		<div class="row">
+			{nocache}
+			{if $sections.right}
+			<div id="rightBox" class="col-xs-{$sections.mobileRightWidth} col-md-{$sections.rightWidth}">
+				<h2 class="zeroDis">rightBox</h2>
+				<aside id="rightAsideContent" class="asideContent">
+					{nocache}{include file="theme/`$settings.theme`/tpl/customise/rightBox.htm"}{/nocache}
+				</aside>
+			</div>
+			{/if}
+			{if $sections.center}
+			<div id="centerBox" class="col-xs-{$sections.mobileCenterWidth} col-md-{$sections.centerWidth}">
+				<!-- <h2 class="zeroDis">content</h2> -->
+				<div id="content" class="content">
+					{nocache}{$center}{/nocache}
+				</div>
+			</div>
+			{/if}
+			{if $sections.left}
+	
+			<div id="leftBox" class="col-xs-{$sections.mobileLeftWidth} col-md-{$sections.leftWidth}">
+				<!-- <h2 class="zeroDis">leftBox</h2> -->
+				<aside id="leftAsideContent" class="asideContent">
+					{nocache}{include file="theme/`$settings.theme`/tpl/customise/leftBox.htm"}{/nocache}
+				</aside>
+			</div>
+			{/if}
+			{/nocache}
+		</div>
+	</main>
+</div>
+<!--/Wrapper-->
+<!-- Footer -->
+<footer id="footer" class="footer">
+	{include file="theme/`$settings.theme`/tpl/common/footer.htm"}
+</footer>
+<!-- /Footer -->
+<section id="copyright" class="copyright text-center module-small bg-light p-t-30 p-b-30">
+	<!-- <h2 class="zeroDis">copyright</h2> -->
+	{include file="theme/`$settings.theme`/tpl/common/copyright.htm"}
+</section>
+{nocache}
+
+<script src="theme/{$settings.theme}/js/js.php"></script>
+{if $smarty.session.uType > 1}
+<script src="kernel/lib/xorg/editor/ckeditor.js"></script>
+<script src="kernel/lib/xorg/finder/ckfinder.js"></script>
+{/if}
+
+{include file="theme/`$settings.theme`/tpl/common/googlePlus.htm"}
+</body>
+</html>

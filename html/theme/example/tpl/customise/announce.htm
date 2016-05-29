@@ -1,0 +1,20 @@
+<div class="displayNone">POPUP: #Announce</div>
+<div id="countdown">
+	<div class="paddy10">
+		<input id="byPassCountDown" type="password" placeholder="رمز ورود">
+	</div>
+	<div class="center">
+		<span class="x4 bold red specialFont">افتتاح سایت</span>
+	</div>
+	<div class="paddy5">
+		<div class="countdown h410 centerObject cell80">
+			<div id="initiateCountdown" class="styled"></div>
+			<div class="paddyUpDown55 center LH100">
+				<span class="x2 bold specialFont">پنجشنبه ۲۳ مهر ۱۳۹۴ ساعت ۱۶</span>
+			</div>
+		</div>
+	</div>
+</div>
+{literal}
+<commands value="$('#initiateCountdown').countdown({date: 'Oct 15, 2015 16:00:00', render: function(data) { $(this.el).html('<div class=countdownDay>' + this.leadingZeros(data.days, 2) + ' <span>روز</span></div><div class=countdownHour>' + this.leadingZeros(data.hours, 2) + ' <span>ساعت</span></div><div class=countdownMinute>' + this.leadingZeros(data.min, 2) + ' <span>دقیقه</span></div><div class=countdownSecond>' + this.leadingZeros(data.sec, 2) + ' <span>ثانیه</span></div>'); }});">
+{/literal}

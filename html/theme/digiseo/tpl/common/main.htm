@@ -1,0 +1,63 @@
+{include file="theme/`$settings.theme`/tpl/common/head.htm"}
+<body id="body" style="direction: {$lang.direction};">
+<div id="preloader">
+	<div id="status">&nbsp;</div>
+</div>
+{if $sections.nav}
+{nocache}{include file="theme/`$settings.theme`/tpl/common/nav.htm"}{/nocache}
+{/if}
+
+{if $sections.slider}
+<header class="header">{nocache}{include file="theme/`$settings.theme`/tpl/common/slider.htm"}{/nocache}</header>
+{/if}
+
+<!-- Wrapper -->
+<div id="wrapper" class="wrapper">
+	<main>
+		{nocache}
+		{if $section.right || $section.left}
+		<div class="row">
+		{/if}
+			{if $sections.right}
+			<section id="rightBox" class="col-xs-{$sections.rightWidth} col-md-{$sections.rightWidth}">
+				<aside id="rightAsideContent" class="asideContent">
+					{include file="theme/`$settings.theme`/tpl/customise/rightBox.htm"}
+				</aside>
+			</section>
+			{/if}
+			{if $sections.center}
+			<section id="centerBox" class="col-xs-{$sections.centerWidth} col-md-{$sections.centerWidth}">
+				<div id="content" class="content">
+					{$center}
+				</div>
+			</section>
+			{/if}
+			{if $sections.left}
+	
+			<section id="leftBox" class="col-xs-{$sections.leftWidth} col-md-{$sections.leftWidth}">
+				<aside id="leftAsideContent" class="asideContent">
+					{include file="theme/`$settings.theme`/tpl/customise/leftBox.htm"}
+				</aside>
+			</section>
+			{/if}
+		{if $section.right || $section.left}
+		</div>
+		{/if}
+		{/nocache}
+	</main>
+</div>
+<!--/Wrapper-->
+<!-- Footer -->
+<footer id="footer" class="footer">
+	{include file="theme/`$settings.theme`/tpl/common/footer.htm"}
+</footer>
+<!-- /Footer -->
+<!-- Copyright -->
+<section id="copyright" class="copyright text-center module-small bg-light p-t-30 p-b-30">
+	{include file="theme/`$settings.theme`/tpl/common/copyright.htm"}
+</section>
+<!-- /Copyright -->
+<script src="theme/{$settings.theme}/js/js.php"></script>
+{include file="theme/`$settings.theme`/tpl/common/googlePlus.htm"}
+</body>
+</html>

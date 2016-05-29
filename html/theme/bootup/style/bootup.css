@@ -1,0 +1,21 @@
+/* Slider */
+.fill {
+    
+}
+
+.slide svg {
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    max-width: 76vw;
+    min-width: 1200px;
+    z-index: 10000;
+}
+
+.slide .svgLeft {
+    left: 0;
+}
+
+.slide .svgRight {
+    right: 0;
+}

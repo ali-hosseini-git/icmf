@@ -1,0 +1,559 @@
+/************************/
+/*         Main         */
+/************************/
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #eaeaea;
+	border-left: 1px solid #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #ccc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #aaa;
+}
+
+html {
+	
+}
+
+body {
+	width: 100%;
+	font-family: BRoya, Tahoma;
+	font-size: 16px;
+	background: #F7F7F7;
+}
+
+a {
+	color: #F5821F;
+}
+
+@font-face {
+    font-family: 'BRoya';
+    src: url('../font/WebRoya.eot');
+    src: url('../font/WebRoya.eot?#iefix') format('embedded-opentype'),
+         url('../font/WebRoya.woff') format('woff'),
+         url('../font/WebRoya.ttf') format('truetype'),
+         url('../font/WebRoya.svg#WebRoya') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0600–06FF;
+}
+
+@font-face {
+	font-family: 'dastnevis';
+	src: url('../font/dastnevis.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Yekan';
+	src: url('../font/Yekan.eot');
+	src: url('../font/Yekan.eot?iefix') format('eot'),
+		url('../font/Yekan.woff') format('woff'), url('../font/Yekan.ttf')
+		format('truetype'), url('../font/Yekan.svg#webfontZam02nTh')
+		format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	line-height: 55px;
+	font-family: "Yekan";
+	letter-spacing: -0.5px;
+	/*text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);*/
+}
+
+h1 {
+	font-size: 1.4em;
+}
+
+h1 .title {
+	font-size: 1.4em;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+h3 {
+	font-size: 1em;
+}
+
+p {
+	padding: 5px 3px;
+	text-indent: 5px;
+	line-height: 30px;
+	text-align: justify;
+	font-size: 18px;
+}
+
+.specialFont {
+	font-family: yekan;
+}
+
+.dastnevisFont {
+	font-family: dastnevis;
+}
+
+.fsNetwork {
+	background: #000;
+	font-family: yekan;
+	color: #fff;
+}
+
+.respoHolding {
+	display: none;
+}
+
+.wrapper {
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+.topBarFixed {
+	z-index: 1000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+	-webkit-transition: all 0.8s ease;
+	transition: all 0.8s ease;
+	-moz-transition: all 0.8s ease;
+	-o-transition: all 0.8s ease;
+}
+
+.header {
+	position: absolute;
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 1000;
+}
+
+.header .h1 {
+	font-size: 10px;
+}
+
+.header .h2 {
+	font-size: 9px;
+}
+
+.header .h3 {
+	font-size: 8px;
+}
+
+.tinySearch:hover {
+	background: rgba(255, 255, 255, 0.8);
+	z-index: 1023;
+	-webkit-box-shadow: 0 8px 3px -5px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 8px 3px -5px rgba(0, 0, 0, .2);
+	box-shadow: 0 8px 3px -5px rgba(0, 0, 0, .2);
+}
+
+.tinySearch:hover>div {
+	padding: 5px;
+	margin-left: -1px;
+	color: #000;
+	position: absolute;
+	border: 1px solid #fff;
+	z-index: 1022;
+	display: block;
+	-webkit-box-shadow: 0 8px 3px -5px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 8px 3px -5px rgba(0, 0, 0, .2);
+	box-shadow: 0 8px 3px -5px rgba(0, 0, 0, .2);
+	background: rgba(255, 255, 255, 0.8);
+	margin-left: -1px;
+}
+
+.tinyLike:hover {
+	background: rgba(255, 255, 255, 0.8);
+	z-index: 1023;
+	-webkit-box-shadow: 0 8px 3px -5px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 8px 3px -5px rgba(0, 0, 0, .2);
+	box-shadow: 0 8px 3px -5px rgba(0, 0, 0, .2);
+}
+
+.tinyLike:hover>div {
+	padding: 5px;
+	margin-left: -1px;
+	color: #000;
+	position: absolute;
+	border: 1px solid #fff;
+	z-index: 1022;
+	display: block;
+	-webkit-box-shadow: 0 8px 3px -5px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 8px 3px -5px rgba(0, 0, 0, .2);
+	box-shadow: 0 8px 3px -5px rgba(0, 0, 0, .2);
+	background: rgba(255, 255, 255, 0.8);
+	margin-left: -1px;
+}
+
+.tinySendMessage:hover {
+	background: rgba(255, 255, 255, 0.8);
+	z-index: 1023;
+	-webkit-box-shadow: 0 8px 3px -5px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 8px 3px -5px rgba(0, 0, 0, .2);
+	box-shadow: 0 8px 3px -5px rgba(0, 0, 0, .2);
+}
+
+.tinySendMessage:hover>div {
+	padding: 5px;
+	margin-left: -1px;
+	color: #000;
+	position: absolute;
+	border: 1px solid #fff;
+	z-index: 1022;
+	display: block;
+	-webkit-box-shadow: 0 8px 3px -5px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 8px 3px -5px rgba(0, 0, 0, .2);
+	box-shadow: 0 8px 3px -5px rgba(0, 0, 0, .2);
+	background: rgba(255, 255, 255, 0.8);
+	margin-left: -1px;
+}
+
+.panel {
+	min-height: 5em;
+	background: #f9f9f9;
+}
+
+.panel .cPanel {
+	display: none;
+	background: url('../img/gradient.png') repeat-x;
+}
+
+input #postSearchList {
+	height: 32px;
+	width: 85%;
+	border: 1px solid #ccc;
+	background: #f9f9f9;
+	padding-right: 10px;
+	direction: rtl;
+	text-align: right;
+	color: #363636;
+	font-size: 13px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.postSearchResult {
+	margin-right: 5px;
+	background: #fff;
+	margin-top: -1px;
+	padding-right: 3px;
+	display: none;
+	position: absolute;
+	height: 200px;
+	overflow: auto;
+	z-index: 1011;
+}
+
+.postSearchResult ul {
+	list-style: disc;
+	font-size: 12px;
+	font-family: BRoya;
+	text-align: right;
+}
+
+.postSearchResultItem:hover {
+	background: rgb(182, 207, 219);
+}
+
+.postCategory li {
+	margin-bottom: 2px;
+	border: 1px solid #f9f9f9;
+	padding: 5px 10px;
+	font-size: 14px;
+	
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.postCategory li:hover {
+	box-shadow: 5px 1px 9px rgba(100, 100, 100, 0.8);
+	-webkit-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+	-ms-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+	cursor: pointer;
+}
+
+/***************************
+* Menu                     *
+***************************/
+nav ul {
+	line-height: 30px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+	display: block;
+	z-index: 1018;
+}
+
+nav ul li {
+	float: right;
+	display: list-item;
+	list-style: none;
+}
+
+nav ul li a {
+	color: #fff;
+	display: block;
+	padding: 5px 11px;
+	text-decoration: none;
+	transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+}
+
+nav ul li a:hover {
+	color: #F5821F;
+}
+
+/* respons menu */
+.respoNav {
+	width: 100%;
+	display: none;
+}
+
+/***************************
+* Slider                   *
+***************************/
+#slider {
+	clear: both;
+}
+/***************************
+* News Ticker              *
+***************************/
+#newsTicker {
+	background: #fff;
+	padding: 0 50px 80px 50px;
+	border-bottom: 3px solid #cecece;
+}
+.newsTicker {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 80%;
+	margin-top: -21px;
+	border-radius: 4px;
+	background: rgba(240, 120, 17, 0.7);
+}
+
+.newsTickerRight {
+	background: url('../img/tiny-logo.png') no-repeat center 20%;
+}
+
+.newsTicker marquee {
+	margin-top: 10px;
+}
+
+/***************************
+* Vertical Ticker          *
+***************************/
+.vticker{
+	
+}
+
+.vticker ul{
+	padding: 0;
+}
+
+.vticker li{
+	list-style: none;
+	padding: 10px;
+}
+
+.et-run{
+	background: red;
+}
+/***************************
+* Container                *
+***************************/
+.container {
+
+}
+/***************************
+* Car types                *
+***************************/
+.carTypes {
+	background: #E0E4E7;
+	padding-bottom: 40px;
+}
+
+.carTypes ul {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.carTypes li {
+	margin: 0 12px;
+	width: 172px;
+	height: 156px;	
+	transition: all .65s ease;
+	-moz-transition: all .65s ease;
+	-webkit-transition: all .65s ease;
+}
+
+.carTypes li:hover {
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.carTypes li:hover > span {
+	display: none;
+}
+
+.carType1 {
+	background: #67B0F6 url('../img/car-type-1.png') no-repeat;
+}
+
+.carType1:hover {
+	background: #F57002 url('../img/car-type-1.png') no-repeat;
+}
+
+.carType2 {
+	background: #67B0F6 url('../img/car-type-2.png') no-repeat;
+}
+
+.carType2:hover {
+	background: #F57002 url('../img/car-type-2.png') no-repeat;
+}
+
+.carType3 {
+	background: #67B0F6 url('../img/car-type-3.png') no-repeat;
+}
+
+.carType3:hover {
+	background: #F57002 url('../img/car-type-3.png') no-repeat;
+}
+
+.carType4 {
+	background: #67B0F6 url('../img/car-type-4.png') no-repeat;
+}
+
+.carType4:hover {
+	background: #F57002 url('../img/car-type-4.png') no-repeat;
+}
+
+.carType5 {
+	background: #67B0F6 url('../img/car-type-5.png') no-repeat;
+}
+
+.carType5:hover {
+	background: #F57002 url('../img/car-type-5.png') no-repeat;
+}
+
+/***************************
+* Testimonials             *
+***************************/
+#testimonials {
+	background: #fff;
+}
+
+.content {
+	position: relative;
+	min-height: 500px;
+	padding: 0px;
+}
+
+.circle {
+	transition: background .65s ease;
+	-moz-transition: background .65s ease;
+	-webkit-transition: background .65s ease;
+}
+
+.circle:hover {
+	background: #fff !important;
+}
+
+.circle:hover>div {
+	opacity: 1;
+	transition: opacity .65s ease;
+	-moz-transition: opacity .65s ease;
+	-webkit-transition: opacity .65s ease;
+}
+
+footer {
+	background: #2C2D2D;
+	color: #797e80;
+}
+
+.socialSection {
+	width: 40%;
+	margin: 0 auto;
+    border-top: 1px solid #454646;
+    border-bottom: 1px solid #454646;
+}
+
+.copyright {
+	background: #2C2D2D;
+	text-align: center;
+	font-size: 0.8em;
+	padding: 20px 0px;
+	color: #797e80;
+}
+
+.goTop {
+	right: -60px;
+	bottom: 20px;
+	position: fixed;
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.7);
+	font-size: 2em;
+	color: #ffffff;
+	cursor: pointer;
+	z-index: 1012;
+}
+
+.goTop:hover {
+	background: rgba(255, 154, 47, 0.7);
+}
+
+.hover {
+	
+}
+
+.hover:HOVER {
+	box-shadow: 5px 1px 9px rgba(100, 100, 100, 0.8);
+	-webkit-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+	-ms-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+}
+
+.fa-facebook-square:hover {
+	color: #3b5998;
+}
+.fa-youtube-square:hover {
+	color: #cc181e;
+}
+.fa-instagram:hover {
+	color: #3f729b;
+}
+.fa-linkedin-square:hover {
+	color: #0077b5;
+}
+.fa-twitter-square:hover {
+	color: #55acee;
+}

@@ -1,0 +1,36 @@
+<div class="container">
+	<table
+		id="table"
+		data-toggle="table" 
+		data-url="post/c_showTitleListObject"
+		data-show-refresh="true"
+		data-show-export="true"
+		data-show-columns="true"
+		data-id-table="advancedTable"
+       	data-id-field="id"
+		data-page-size="10"
+		data-pagination="true"
+		data-page-list="[5, 10, 20, 50, 100, 200]"
+		data-toolbar='#toolbar'
+		data-height="526"
+       	data-sort-name="timeStamp"
+       	data-sort-order="asc"
+       	data-show-multi-sort="true" 
+       	data-hover="true"
+       	data-striped="true"
+       	data-search="true"
+        data-advanced-search="true"
+       	class="table table-hover table-striped"
+	>
+		<thead>
+			<tr>
+				<th data-field="id" data-align="center" data-sortable="true">#</th>
+				<th data-field="timeStamp" data-sortable="true" data-align="center">زمان</th>
+				<th data-field="category" data-sortable="true" data-align="center">شاخه</th>
+				<th data-field="title" data-sortable="true" data-align="center">عنوان</th>
+				<th data-field="viewCount" data-sortable="true" data-align="center">تعداد نمایش</th>
+				<th data-field="active" data-align="center">وضعیت</th>
+			</tr>
+		</thead>
+	</table>
+</div>

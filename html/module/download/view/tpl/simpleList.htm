@@ -1,0 +1,7 @@
+{nocache}
+<ul>
+	{foreach name=entity key=entityKey item=entityItem from=$entityList}
+	<li class="paddy5 margin3 whiteFrame hover curvedFull"><a href="http://{$settings.domainName}/{$entityItem}" target="_blank">{$entityItem|replace: "$downloadDir/" : ''|capitalize}</a></li>
+	{/foreach}
+</ul>
+{/nocache}
