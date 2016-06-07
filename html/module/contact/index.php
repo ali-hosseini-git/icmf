@@ -13,6 +13,7 @@ switch ($sysVar[mode]){
 		$system->xorg->smarty->display($settings['commonTpl'] . 'sendMessage' . $settings['ext4']);
 		break;
 	case "c_sendMessage":
+		
 		$c_contact->c_sendMessage($_POST);
 		break;
 	case "c_listMessage":

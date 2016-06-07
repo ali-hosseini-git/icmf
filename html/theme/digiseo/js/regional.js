@@ -1,10 +1,7 @@
-// News ticker
-$('.newsTicker .postItem').mouseenter(function(){
-	$(this).animate({ height:'500px' }, { queue:false, duration:500 });
-}).mouseleave(function(){
-	$(this).animate({ height:'35px' }, { queue:false, duration:500 });
-});
-
+// Curl load website preview
+$(document).on('change', '#url', function(){
+	$('#websitePreview').html('<iframe scrolling="no" widht="100%" height="320" src="http://' + $('#url').val() + '">');
+})
 // Right side scroll panel and to side scroll panel 
 $(window).scroll(function() {
 	if ($(this).scrollTop() > 20) {

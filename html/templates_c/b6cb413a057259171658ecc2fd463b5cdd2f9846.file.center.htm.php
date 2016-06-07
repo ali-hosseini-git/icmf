@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2016-05-28 15:30:47
+<?php /* Smarty version Smarty-3.1.14, created on 2016-05-29 12:39:45
          compiled from "theme/digiseo/tpl/customise/center.htm" */ ?>
 <?php /*%%SmartyHeaderCode:109756242257497a5fb38dd7-76809723%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'b6cb413a057259171658ecc2fd463b5cdd2f9846' => 
     array (
       0 => 'theme/digiseo/tpl/customise/center.htm',
-      1 => 1464002684,
+      1 => 1464509381,
       2 => 'file',
     ),
   ),
@@ -15,13 +15,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.14',
+  'unifunc' => 'content_57497a5fb64478_67707679',
   'variables' => 
   array (
     'settings' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.14',
-  'unifunc' => 'content_57497a5fb64478_67707679',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_57497a5fb64478_67707679')) {function content_57497a5fb64478_67707679($_smarty_tpl) {?><section class="customers">
 	<div class="row text-center">
@@ -70,19 +70,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	<div class="row">
 		<div class="col-xs-12 col-sm-6 col-md-3">
 			<div class="serviceBox">
-				<span class="icon-mobile"></span>
-				<span class="icon-desktop"></span>
-				<h2>خدمات طراحی سایت</h2>
-				<hr class="soften">
-				<p>
-					ایجاد و ارتقا یک پایگاه آنلاین به منظور اطلاع‌رسانی و یا اجرای پروسه تجارت الکترونیک از بدیهات و جزء لاینکف برای یک کسب و کار آنلاین و حتی غیر آنلاین است. 
-				</p>
-				<br><br>
-				<a href="web-design">راه‌کارهای طراحی سایت</a>
-			</div>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-3">
-			<div class="serviceBox">
 				<span class="icon-linegraph"></span>
 				<h2>خدمات سئو</h2>
 				<hr class="soften">
@@ -90,7 +77,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					پس از راه اندازی سایت، تنها ۵٪ از راه کسب درآمد از فضای مجازی را پیموده‌اید، سئو بهترین ابزاری است که به شما در بازاریابی و فروش کمک می‌کند.
 				</p>
 				<br><br>
-				<a href="seo">راه‌کاری سئو و بهینه سازی</a>
+				<a href="seo">راه‌کاری سئو</a>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-3">
+			<div class="serviceBox">
+				<span class="icon-pencil"></span>
+				<h2>خدمات تولید محتوا</h2>
+				<hr class="soften">
+				<p>
+					امروزه برای اینکه هرچه بهتر بتوانیم کاربران و مخاطبین را به خود جذب بکنیم باید صحبتی جدید برایشان داشته باشیم و محتوایی بکر به ایشان تحویل دهیم. 
+				</p>
+				<br><br>
+				<a href="web-design">راه‌کارهای تولید محتوا</a>
 			</div>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-3">

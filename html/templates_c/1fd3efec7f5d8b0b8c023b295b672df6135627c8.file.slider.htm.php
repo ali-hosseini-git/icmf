@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2016-05-28 15:19:54
+<?php /* Smarty version Smarty-3.1.14, created on 2016-05-31 11:24:02
          compiled from "theme/digiseo/tpl/common/slider.htm" */ ?>
 <?php /*%%SmartyHeaderCode:623892293574977d2f2e954-20152316%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '1fd3efec7f5d8b0b8c023b295b672df6135627c8' => 
     array (
       0 => 'theme/digiseo/tpl/common/slider.htm',
-      1 => 1463893614,
+      1 => 1464677636,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.14',
+  'unifunc' => 'content_574977d30403f5_89694942',
   'variables' => 
   array (
     'lang' => 0,
@@ -22,71 +24,38 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'post' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.14',
-  'unifunc' => 'content_574977d30403f5_89694942',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_574977d30403f5_89694942')) {function content_574977d30403f5_89694942($_smarty_tpl) {?><div id="carousel1" class="carousel slide" data-ride="carousel">
 	<div class="carousel-inner">
 		<div class="overItem container">
 			<div class="row">
-				<div class="row col-xs-8 col-md-8">
+				<div class="col-xs-12 col-sm-9 col-md-9">
 					<div class="container">
-						<h1>تحلیل وضعیت سئو سایت شما، کاملا رایگان و اتوماتیک</h1>
-						<br>
-					</div>
-					<div class="container">
-						<input id="website" class="form-control" placeholder="<?php echo $_smarty_tpl->tpl_vars['lang']->value['website'];?>
+						<h1>بررسی سئو سایت</h1>
+						<div id="websiteInfomation" class="websiteInformation text-right">Website information</div>
+						<input id="url" class="form-control" placeholder="<?php echo $_smarty_tpl->tpl_vars['lang']->value['website'];?>
 ">
-						<br>
-					</div>
-					<div class="row col-xs-6 col-md-6">
-						<div class="container">
-							<form role="form">
-								<div class="form-group">
-									<input id="firstName" class="form-control" placeholder="<?php echo $_smarty_tpl->tpl_vars['lang']->value['firstName'];?>
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 col-md-6">
+								<input id="firstName" class="form-control" placeholder="<?php echo $_smarty_tpl->tpl_vars['lang']->value['firstName'];?>
 ">
-								</div>
-								<div class="form-group">
-									<input id="lastName" class="form-control" placeholder="<?php echo $_smarty_tpl->tpl_vars['lang']->value['lastName'];?>
+								<input id="email" class="form-control" placeholder="<?php echo $_smarty_tpl->tpl_vars['lang']->value['email'];?>
 ">
-								</div>
-								<div class="form-group">
-									<input id="email" type="email" class="form-control" placeholder="<?php echo $_smarty_tpl->tpl_vars['lang']->value['email'];?>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-6">
+								<input id="lastName" class="form-control" placeholder="<?php echo $_smarty_tpl->tpl_vars['lang']->value['lastName'];?>
 ">
-								</div>
-								<div class="checkbox">
-									<label><input type="checkbox"> Remember me</label>
-								</div>
-								<button type="submit" class="btn btn-default">Submit</button>
-							</form>
+								<input id="mobile" class="form-control" placeholder="<?php echo $_smarty_tpl->tpl_vars['lang']->value['mobile'];?>
+">
+							</div>
 						</div>
-					</div>
-					<div class="row col-xs-6 col-md-6">
-						<div class="container">
-							<form role="form">
-								<div class="form-group">
-									<input id="firstName" class="form-control" placeholder="<?php echo $_smarty_tpl->tpl_vars['lang']->value['firstName'];?>
-">
-								</div>
-								<div class="form-group">
-									<input id="lastName" class="form-control" placeholder="<?php echo $_smarty_tpl->tpl_vars['lang']->value['lastName'];?>
-">
-								</div>
-								<div class="form-group">
-									<input id="email" type="email" class="form-control" placeholder="<?php echo $_smarty_tpl->tpl_vars['lang']->value['email'];?>
-">
-								</div>
-								<div class="checkbox">
-									<label><input type="checkbox"> Remember me</label>
-								</div>
-								<button type="submit" class="btn btn-default">Submit</button>
-							</form>
-						</div>
+						<button type="button" class="btn btn-info"><?php echo $_smarty_tpl->tpl_vars['lang']->value['submit'];?>
+</button>
 					</div>
 				</div>
-				<div class="col-xs-4 col-md-4">
+				<div class="col-sm-3 col-md-3">
 					<div class="container someAudit">
-						A
+						<div id="websitePreview" class="websitePreview">Website preview</div>
 					</div>
 				</div>
 			</div>

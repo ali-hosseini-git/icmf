@@ -1,4 +1,5 @@
 <?php
+
 function compress($string) {
 
 	// remove comments
@@ -8,36 +9,31 @@ function compress($string) {
 
 	return $string;
 }
-require_once '../../../config/config.php';
 
-function loadFiles(){
+function loadFiles(){	
+	$files = array();
 	
-	$files = array(
-		'../../../kernel/lib/xorg/bootstrap-rtl/assets/js/jquery.js',
-		'../../../kernel/lib/xorg/isotope/jquery.isotope.min.js',
-		'../../../kernel/lib/xorg/isotope/isotope.pkgd.min.js',
-		'../../../kernel/lib/xorg/isotope/isotope.js',
-// 		'../../../kernel/lib/xorg/jQuery/plugin/address/jquery.address-1.5.min.js',
-// 		'../../../kernel/lib/xorg/jQuery/plugin/showLoading/jquery.showLoading.min.js',
-// 		'../../../kernel/lib/xorg/ajax/ajax.js',
-// 		'../../../kernel/lib/xorg/jQuery/plugin/scrollTo/jquery.scrollTo-1.4.3.1-min.js',
-// 		'../../../kernel/lib/xorg/global/disableScroll.js',
-// 		'../../../kernel/lib/xorg/jQuery/plugin/mcdropdown/jquery.mcdropdown.min.js',
-// 		'../../../kernel/lib/xorg/jQuery/plugin/mcdropdown/jquery.bgiframe.js',
-//  	'../../../kernel/lib/xorg/jQuery/plugin/showPassword/jquery.showpassword.min.js',
-			
-		'../../../kernel/lib/xorg/bootstrap-rtl/assets/js/html5shiv.js',
-		'../../../kernel/lib/xorg/bootstrap-rtl/assets/js/respond.min.js',
-		
-		'startUp.js',
-		'custom.js'
-		
-		);
-	if ($settings['lang'] == 'ltr')
-		$files[] = '../../../kernel/lib/xorg/bootstrap/bootstrap.min.js';
-	else
-		$files[] = '../../../kernel/lib/xorg/bootstrap-rtl/dist/js/bootstrap.min.js';
-		
+	// Framework JS
+	$files[] = '../../../kernel/lib/xorg/jQuery/jquery-1.10.2.min.js';
+	$files[] = '../../../kernel/lib/xorg/jQuery/jquery-migrate-1.0.0.min.js';
+	$files[] = '../../../kernel/lib/xorg/bootstrap/bootstrap.min.js';
+	$files[] = '../../../kernel/lib/xorg/jQuery/plugin/address/jquery.address-1.5.js';
+	$files[] = '../../../kernel/lib/xorg/jQuery/plugin/scrollTo/jquery.scrollTo-1.4.3.1-min.js';
+	$files[] = '../../../kernel/lib/xorg/jQuery/plugin/showLoading/jquery.showLoading.min.js';
+	$files[] = '../../../kernel/lib/xorg/ajax/ajax.js';
+	
+	
+	// Modules JS
+	$moduelDir = 'modules';
+	$jss = array_diff(scandir('modules'), array('..', '.'));
+	foreach ($jss as $js){
+		$files[] = $moduelDir . '/' . $js;
+	}
+	
+	// Theme JS
+	$files[] = 'regional.js';
+	$files[] = 'startUp.js';
+	
 	foreach ($files as $file){
 		$string .= file_get_contents($file);
 	}
@@ -56,9 +52,18 @@ $expire = 'expires: ' . gmdate ('D, d M Y H:i:s', time() + $offset) . ' GMT';
 header ($expire);
 ob_start();
 
+require_once '../../../config/config.php';
+
+// Developer mode
+if($settings['mode'] == 'dev'){
+	if (file_exists('../../../tmp/cache/js.js')) {
+		unlink('../../../tmp/cache/js.js');
+	}
+}
+
 if(file_exists('../../../tmp/cache/js.js')){
 	if(filemtime('../../../tmp/cache/js.js') < (time()-2592000)){
-		file_put_contents('../../../tmp/cache/js.js', loadFiles());
+		file_put_contents('../../../tmp/cache/js.js', loadFiles());		
 	}
 }else{
 	file_put_contents('../../../tmp/cache/js.js', loadFiles());

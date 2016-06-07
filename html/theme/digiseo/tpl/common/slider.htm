@@ -2,57 +2,27 @@
 	<div class="carousel-inner">
 		<div class="overItem container">
 			<div class="row">
-				<div class="row col-xs-9 col-md-9">
+				<div class="col-xs-12 col-sm-9 col-md-9">
 					<div class="container">
 						<h1>بررسی سئو سایت</h1>
-						<br>
-					</div>
-					<div class="container">
-						<input id="website" class="form-control" placeholder="{$lang.website}">
-						<br>
-					</div>
-					<div class="row col-xs-6 col-md-6">
-						<div class="container">
-							<form role="form">
-								<div class="form-group">
-									<input id="firstName" class="form-control" placeholder="{$lang.firstName}">
-								</div>
-								<div class="form-group">
-									<input id="lastName" class="form-control" placeholder="{$lang.lastName}">
-								</div>
-								<div class="form-group">
-									<input id="email" type="email" class="form-control" placeholder="{$lang.email}">
-								</div>
-								<div class="checkbox">
-									<label><input type="checkbox"> Remember me</label>
-								</div>
-								<button type="submit" class="btn btn-default">Submit</button>
-							</form>
+						<div id="websiteInfomation" class="websiteInformation text-right">Website information</div>
+						<input id="url" class="form-control" placeholder="{$lang.website}">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 col-md-6">
+								<input id="firstName" class="form-control" placeholder="{$lang.firstName}">
+								<input id="email" class="form-control" placeholder="{$lang.email}">
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-6">
+								<input id="lastName" class="form-control" placeholder="{$lang.lastName}">
+								<input id="mobile" class="form-control" placeholder="{$lang.mobile}">
+							</div>
 						</div>
-					</div>
-					<div class="row col-xs-6 col-md-6">
-						<div class="container">
-							<form role="form">
-								<div class="form-group">
-									<input id="firstName" class="form-control" placeholder="{$lang.firstName}">
-								</div>
-								<div class="form-group">
-									<input id="lastName" class="form-control" placeholder="{$lang.lastName}">
-								</div>
-								<div class="form-group">
-									<input id="email" type="email" class="form-control" placeholder="{$lang.email}">
-								</div>
-								<div class="checkbox">
-									<label><input type="checkbox"> Remember me</label>
-								</div>
-								<button type="submit" class="btn btn-default">Submit</button>
-							</form>
-						</div>
+						<button type="button" class="btn btn-info">{$lang.submit}</button>
 					</div>
 				</div>
-				<div class="col-xs-3 col-md-3">
+				<div class="col-sm-3 col-md-3">
 					<div class="container someAudit">
-						A
+						<div id="websitePreview" class="websitePreview">Website preview</div>
 					</div>
 				</div>
 			</div>

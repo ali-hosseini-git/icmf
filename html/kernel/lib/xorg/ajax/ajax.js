@@ -38,6 +38,18 @@
 		}
 	});
 	
+	$('form').submit(function(){
+		
+		var data = $(this).serialize();   
+		var href = $(this).attr('action') ? $(this).attr('action') : '';
+		var method = $(this).attr('method') ? $(this).attr('method') : 'POST';
+		var target = $(this).attr('target') ? '#' + $(this).attr('target') : '#content';
+		
+		alert(data);
+		
+		$(target).farajax('json', href, data);
+	});
+	
 	$.address.state('').init(function(event) {
     }).change(function(event) {
 		$.address.state().replace(/^\/$/, '') + event.value;
@@ -62,20 +74,25 @@
 
     	var target = '#' + elem.id;
         if (options && typeof(options) == 'string') {
-           if (options == 'loader') {
-               loader(arg, data);
-           }
+//           if (options == 'loader') {
+//               loader(arg, data, dataType);
+//           }else if (options == 'jsonLoader') {
+//        	   loader();
+//           }
+        	
+        	loader(arg, data, options);
+        	
            return;
         }
 
-        function loader(href, data){
+        function loader(href, data, dataType){
         	var LoadMsg = 'Please Wait ...';
-        	
+        		
     			$.ajax({
     				type: 'POST',
     				url: href,
     				data: data,
-    				dataType: 'html',
+    				dataType: dataType,
     				timeout: 30000,
     				cache: false,
     				tryCount: 0,

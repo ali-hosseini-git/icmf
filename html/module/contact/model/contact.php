@@ -14,10 +14,16 @@ class m_contact{
 		global $system, $lang, $settings;
 
 		$timeStamp = time();
-		$system->dbm->db->insert("`$this->contactMessageTable`", "`active`, `timeStamp`, `owner`, `group`, `or`, `ow`, `ox`, `gr`, `type`, `department`, `subject`, `sender`, `email`, `mobile`, `message`", "1, $timeStamp, 1, 8, 1, 1, 1, 1, '$values[contactMessageType]', '$values[contactDepartment]' '$values[contactSubject]', '$values[contactSender]', '$values[contactEmail]', '$values[contactMobile]', '$values[contactMessage]'");
+// 		echo 'Before: ' . print_r($values) . '<br>';
+// 		$values = json_encode($values);
+// 		echo 'After: ';
+// 		print_r($values);
+		$system->dbm->db->insert("`$this->contactMessageTable`", "`active`, `timeStamp`, `owner`, `group`, `or`, `ow`, `ox`, `gr`, `type`                       , `department`                , `subject`                , `sender`                , `email`                , `mobile`                , `message`", 
+																 "1       , $timeStamp , 1      , 8      , 1   , 1   , 1   , 1   , '$values[messageType]', '$values[department]', '$values[subject]', '$values[sender]', '$values[email]', '$values[mobile]', '$values[message]'");
 		// To admin mail
-		mail($settings['infoMail'], $values['contactSubject'], $values['contactMessage'], "MIME-Version: 1.0\r\nContent-type: text/html; charset=utf-8\r\nFrom: $values[contactEmail] <$values[contactEmail]>\nX-Mailer: PHP/" . phpversion());
+// 		mail($settings['infoMail'], $values['contactSubject'], $values['contactMessage'], "MIME-Version: 1.0\r\nContent-type: text/html; charset=utf-8\r\nFrom: $values[contactEmail] <$values[contactEmail]>\nX-Mailer: PHP/" . phpversion());
 
+		
 		$system->watchDog->exception("s", $lang[sendMessage], sprintf($lang[successfulDone], $lang[sendMessage], $values['contactSubject']));
 	}
 	// List Messages
