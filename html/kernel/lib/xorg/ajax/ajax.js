@@ -39,15 +39,16 @@
 	});
 	
 	$('form').submit(function(){
-		
+			
 		var data = $(this).serialize();   
 		var href = $(this).attr('action') ? $(this).attr('action') : '';
 		var method = $(this).attr('method') ? $(this).attr('method') : 'POST';
 		var target = $(this).attr('target') ? '#' + $(this).attr('target') : '#content';
 		
-		alert(data);
-		
 		$(target).farajax('json', href, data);
+		
+		return false;
+		
 	});
 	
 	$.address.state('').init(function(event) {
@@ -99,37 +100,46 @@
     				retryLimit: 3,
     				
     				beforeSend:function(){
+    					alert(0);
     				    $(target).showLoading();
     				},
     				
     				success: function(d,s){
-    					fileContent = d;
-						if (d.match('ENO: #') || d.match('SNO: #') || d.match('WNO: #') || d.match('INO: #') || d.match('UNO: #') || d.match('POPUP: #')) {
-							prompt = 1;
-							$(this).remove();
-							$('#modalMask').fadeIn('slow', function (){
-								$('#modalWindow').fadeIn('slow', function(){
-									$('#modalContent').html(d);
-								});
-								disable_scroll();
-							});
-						}else{
-							$(this).remove();
-							$(target).html(d);
-						}
+//    					alert(1);
+//    					fileContent = d;
+//						if (d.match('ENO: #') || d.match('SNO: #') || d.match('WNO: #') || d.match('INO: #') || d.match('UNO: #') || d.match('POPUP: #')) {
+//							prompt = 1;
+//							$(this).remove();
+    						$("body").append("<div id='modalMask' class='modal fade' role='dialog'></div>");
+    						$('#modalMask').html(d);
+    						$("#modalMask").modal();
+//							$('#modalMask').fadeIn('slow', function (){
+//								$('#modalWindow').fadeIn('slow', function(){
+//									$('#modalContent').html(d);
+//								});
+//								disable_scroll();
+//							});
+//						}else{
+//							$(this).remove();
+//							$(target).html(d);
+//						}
+//    					var obj = jQuery.parseJSON(d);
+//    					alert( obj.message );
     				},
     				
     				complete: function(){
-    					var commands = fileContent.match(/commands value="(.+?)"/);
-						if(commands){
-	    					if (typeof commands !== "undefined") {
-								setTimeout(commands[1], 2000);
-							}
-						}
+    					alert(2);
+//    					var commands = fileContent.match(/commands value="(.+?)"/);
+//						if(commands){
+//	    					if (typeof commands !== "undefined") {
+//								setTimeout(commands[1], 2000);
+//							}
+//						}
     					$(target).hideLoading();
     				},
     						
     				error: function(o,s,e){
+    					console.log(o, s, e);
     					if (s == 'timeout') {
     			            this.tryCount++;
     			            if (this.tryCount <= this.retryLimit) {
@@ -143,9 +153,9 @@
     			        if (o.status == 500) {
     			        	$(target).html('Internal server error, please contact to system administrator.');
     			        } else if(o.status == 404){
-    			        	$(target).html('Cant find, please contact to system administrator.');
+    			        	$(target).html('Content Can\'t find, please contact to system administrator.');
     			        }else{
-    			        	$(target).html('Error number ' + o.status + ', please contact to system administrator.');
+    			        	$(target).html(e + '<br>Cotanct to webmaster.');
     			        }
     				}
     			});
