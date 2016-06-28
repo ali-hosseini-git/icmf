@@ -807,20 +807,18 @@ jQuery(document.body).find('#loading-indicator-'+indicatorID).remove();jQuery(do
     				retryLimit: 3,
     				
     				beforeSend:function(){
-    					alert(0);
-    				    $(target).showLoading();
+//    				    $(target).showLoading();
     				},
     				
-    				success: function(d,s){
+    				success: function(data, status){
 //    					alert(1);
 //    					fileContent = d;
 //						if (d.match('ENO: #') || d.match('SNO: #') || d.match('WNO: #') || d.match('INO: #') || d.match('UNO: #') || d.match('POPUP: #')) {
 //							prompt = 1;
 //							$(this).remove();
-    						$("body").append("<div id='modalMask' class='modal fade' role='dialog'></div>");
-    						alert(d);
-    						$('#modalMask').html(d);
-    						$("#modalMask").modal();
+//    						$("body").append("<div id='modalMask' class='modal fade' role='dialog'></div>");
+//    						$('#modalMask').html(d);
+//    						$("#modalMask").modal();
 //							$('#modalMask').fadeIn('slow', function (){
 //								$('#modalWindow').fadeIn('slow', function(){
 //									$('#modalContent').html(d);
@@ -831,24 +829,28 @@ jQuery(document.body).find('#loading-indicator-'+indicatorID).remove();jQuery(do
 //							$(this).remove();
 //							$(target).html(d);
 //						}
-//    					var obj = jQuery.parseJSON(d);
-//    					alert( obj.message );
+    					var json = $.parseJSON(JSON.stringify(data));
+//    					$("body").append("<div id='modalMask' class='modal fade' role='dialog'></div>");
+    					$('<div></div>').appendTo('body').load('../../theme/digiseo/tpl/common/modal.htm', function(){
+    						$('.modal-title').html(json.subject);
+    						$('.modal-body').html(json.message);
+    						$('#modal').modal();
+    					});
     				},
     				
     				complete: function(){
-    					alert(2);
 //    					var commands = fileContent.match(/commands value="(.+?)"/);
 //						if(commands){
 //	    					if (typeof commands !== "undefined") {
 //								setTimeout(commands[1], 2000);
 //							}
 //						}
-    					$(target).hideLoading();
+//    					$(target).hideLoading();
     				},
     						
-    				error: function(o,s,e){
-    					console.log(o, s, e);
-    					if (s == 'timeout') {
+    				error: function(object,status,error){
+    					console.log(object, status, error);
+    					if (status == 'timeout') {
     			            this.tryCount++;
     			            if (this.tryCount <= this.retryLimit) {
     			                //try again
@@ -858,12 +860,12 @@ jQuery(document.body).find('#loading-indicator-'+indicatorID).remove();jQuery(do
     			            }            
     			            return;
     			        }
-    			        if (o.status == 500) {
+    			        if (object.status == 500) {
     			        	$(target).html('Internal server error, please contact to system administrator.');
-    			        } else if(o.status == 404){
+    			        } else if(object.status == 404){
     			        	$(target).html('Content Can\'t find, please contact to system administrator.');
     			        }else{
-    			        	$(target).html(e + '<br>Cotanct to webmaster.');
+    			        	$(target).html(error + '<br>Cotanct to webmaster.');
     			        }
     				}
     			});

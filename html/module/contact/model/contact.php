@@ -23,7 +23,7 @@ class m_contact{
 		// To admin mail
 // 		mail($settings['infoMail'], $values['contactSubject'], $values['contactMessage'], "MIME-Version: 1.0\r\nContent-type: text/html; charset=utf-8\r\nFrom: $values[contactEmail] <$values[contactEmail]>\nX-Mailer: PHP/" . phpversion());
 
-		echo json_encode(array('sign'=>'s', 'subject'=>$lang['sendMessage'], 'message'=>sprintf($lang[successfulDone], $lang[sendMessage], $values['contactSubject'])));
+		echo json_encode(array('sign'=>'s', 'subject'=>$lang['sendMessage'], 'message'=>sprintf($lang[successfulDone], $lang[sendMessage], $values['subject'])));
 // 		$system->watchDog->exception("s", $lang[sendMessage], sprintf($lang[successfulDone], $lang[sendMessage], $values['contactSubject']));
 	}
 	// List Messages
